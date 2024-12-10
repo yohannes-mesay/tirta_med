@@ -3,7 +3,7 @@
 import { ReactNode, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-
+import Link from "next/link"
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -31,24 +31,23 @@ export default function OnlineTraining({
 
   const onlineTrainings = [
     {
-      title: "Advanced Cardiac Life Support",
-      description: "Master the latest techniques in cardiac emergency care",
+      title: "Basic First Aid in Amharic Vol. 1",
+      description: "Learn basic first aid techniques in Amharic Vol. 1",
       icon: <Play className="h-6 w-6 text-blue-500" />,
-      link: "#",
+      link: "https://tirta-s-school.teachable.com/p/11",
     },
     {
-      title: "Pediatric Emergency Care",
+      title: "Trauma-Focused First Aid in Amharic Vol. 1",
       description:
-        "Specialized training for treating young patients in critical situations",
+        "Specialized training for trauma-focused first aid in Amharic Vol. 1",
       icon: <Book className="h-6 w-6 text-green-500" />,
-      link: "#",
+      link: "https://tirta-s-school.teachable.com/p/d4bf52",
     },
     {
-      title: "Telemedicine Essentials",
-      description:
-        "Learn to provide effective healthcare through digital platforms",
+      title: "First Aid for Medical Emergencies in Amharic Vol. 2",
+      description: "Learn first aid for medical emergencies in Amharic Vol. 2",
       icon: <Users className="h-6 w-6 text-purple-500" />,
-      link: "#",
+      link: "https://tirta-s-school.teachable.com/p/74b8c0",
     },
   ];
 
@@ -107,13 +106,14 @@ export default function OnlineTraining({
                   <p className="text-gray-600 mb-6">
                     {selectedService.description}
                   </p>
-                  <Button
-                    onClick={() => router.push(selectedService.link)}
-                    className="w-full"
+                  <Link
+  href={selectedService.link}
+  target="_blank"
+className="w-full"
                   >
                     Learn More
                     <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </motion.div>

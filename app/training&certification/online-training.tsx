@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/card";
 import { ChevronRight, Play, Book, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function OnlineTraining({
   services,
@@ -145,14 +146,15 @@ export default function OnlineTraining({
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">{training.description}</p>
-                    <Button
-                      onClick={() => router.push(training.link)}
-                      variant="outline"
+                    <Link
+                      href={training.link}
+                      // variant="outline"
+                      target="_blank"
                       className="w-full border-blue-500 text-blue-500 hover:bg-blue-50"
                     >
                       Learn More
                       <ChevronRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    </Link>
                   </div>
                 </motion.div>
               ))}
