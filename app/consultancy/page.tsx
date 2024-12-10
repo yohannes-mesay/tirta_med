@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Footer from "../Home/Footer";
-import dynamic from "next/dynamic";
-const LeafletMap = dynamic(() => import("../Home/MapComponent"), {
-  ssr: false,
-});
+// import dynamic from "next/dynamic";
+// const LeafletMap = dynamic(() => import("../Home/MapComponent"), {
+//   ssr: false,
+// });
 import banner1 from "@/public/tirtabanner.jpg";
 import res from "@/public/res.jpg";
 import need from "@/public/need.jpg";
@@ -52,7 +52,7 @@ export default function page() {
     <div>
       <ServicesBanner banner={banner1} title="Reasearch & Consultancy" />
       <ServicesPage services={services} />
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );

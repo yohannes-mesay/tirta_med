@@ -3,10 +3,10 @@ import React from "react";
 import ServicesPage from "./main";
 import ServicesBanner from "./servies-banner";
 import Footer from "../Home/Footer";
-import dynamic from "next/dynamic";
-const LeafletMap = dynamic(() => import("../Home/MapComponent"), {
-  ssr: false,
-});
+// import dynamic from "next/dynamic";
+// const LeafletMap = dynamic(() => import("../Home/MapComponent"), {
+//   ssr: false,
+// });
 import banner1 from "@/public/tirtabanner.jpg";
 
 import { Stethoscope, Book, Users, Microscope, Notebook } from "lucide-react";
@@ -73,7 +73,7 @@ export default function page() {
     <div>
       <ServicesBanner banner={banner1} title="services" />
       <ServicesPage services={services} />
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );

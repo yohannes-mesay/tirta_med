@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import AboutMain from "@/app/about/yegna";
 import Footer from "@/app/Home/Footer";
 import ServicesBanner from "@/app/services/servies-banner";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import React from "react";
 import banner1 from "@/public/tirtabanner.jpg";
 
-
-const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
-  ssr: false,
-});interface Section {
+// const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
+//   ssr: false,
+// });
+interface Section {
   title: string;
   description: string;
   bulletPoints: BulletPoint[];
@@ -60,7 +60,7 @@ export default function page() {
         desc="At TirtaMed, we are committed to equipping individuals and communities with the knowledge and resources needed to handle emergencies effectively. Explore our services and initiatives designed to empower you:"
         sections={help}
       />
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );

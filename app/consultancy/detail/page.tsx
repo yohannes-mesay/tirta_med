@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import AboutMain from "@/app/about/yegna";
 import Footer from "@/app/Home/Footer";
 import ServicesBanner from "@/app/services/servies-banner";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import React from "react";
 import banner1 from "@/public/tirtabanner.jpg";
 
-
-const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
-  ssr: false,
-});interface BulletPoint {
+// const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
+//   ssr: false,
+// });
+interface BulletPoint {
   title: string;
   description: string;
 }
@@ -74,7 +74,7 @@ export default function page() {
     <div>
       <ServicesBanner banner={banner1} title="" />
       <AboutMain title="Research and Consultancy" desc="" sections={consult} />
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );

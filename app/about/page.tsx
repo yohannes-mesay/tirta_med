@@ -5,11 +5,11 @@ import Detail from "./about-detail";
 import Banner from "./Banner";
 
 import Footer from "../Home/Footer";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const LeafletMap = dynamic(() => import("../Home/MapComponent"), {
-  ssr: false,
-});
+// const LeafletMap = dynamic(() => import("../Home/MapComponent"), {
+//   ssr: false,
+// });
 
 export default function Page() {
   return (
@@ -24,7 +24,7 @@ export default function Page() {
         sections={training}
       /> */}
 
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );

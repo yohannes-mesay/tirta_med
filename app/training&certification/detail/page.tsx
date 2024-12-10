@@ -3,13 +3,13 @@
 import AboutMain from "@/app/about/yegna";
 import Footer from "@/app/Home/Footer";
 import ServicesBanner from "@/app/services/servies-banner";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import React from "react";
 import banner1 from "@/public/tirtabanner.jpg";
 
-const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
-  ssr: false,
-});
+// const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
+//   ssr: false,
+// });
 interface Section {
   title: string;
   description: string;
@@ -158,7 +158,7 @@ export default function page() {
         desc="We provide comprehensive services in emergency response and healthcare innovation."
         sections={training}
       />
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );

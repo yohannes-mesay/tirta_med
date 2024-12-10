@@ -2,13 +2,13 @@
 import AboutMain from "@/app/about/yegna";
 import Footer from "@/app/Home/Footer";
 import ServicesBanner from "@/app/services/servies-banner";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import React from "react";
 import banner1 from "@/public/tirtabanner.jpg";
 
-const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
-  ssr: false,
-});
+// const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
+//   ssr: false,
+// });
 interface Section {
   title: string;
   description: string;
@@ -66,7 +66,7 @@ export default function page() {
         desc="The Yegna Ambulance Network brings a new era of emergency medical response to Ethiopia. By combining advanced technology with professional medical care, we ensure that every emergency call receives the fastest possible response with the highest quality of care."
         sections={yegna}
       />
-      <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} />
+      {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
   );
