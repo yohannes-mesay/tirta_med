@@ -1,9 +1,8 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, ReactElement } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -15,17 +14,21 @@ import {
 import { ChevronRight, Play, Book, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-export default function OnlineTraining({
-  services,
-}: {
-  services: {
-    icon: ReactNode;
-    title: string;
-    description: string;
-    image: StaticImageData;
-    link: string;
-  }[];
-}) {
+interface BulletPoint {
+  title: string;
+  description: string | ReactElement;
+}
+
+interface Service {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  image: StaticImageData;
+  link: string;
+  bulletPoints?: BulletPoint[];
+}
+
+export default function OnlineTraining({ services }: { services: Service[] }) {
   const [selectedService, setSelectedService] = useState(services[0]);
   const router = useRouter();
 
@@ -44,10 +47,10 @@ export default function OnlineTraining({
       link: "https://tirta-s-school.teachable.com/p/d4bf52",
     },
     {
-      title: "First Aid for Medical Emergencies in Amharic Vol. 2",
-      description: "Learn first aid for medical emergencies in Amharic Vol. 2",
+      title: "First Aid for Medical Emergencies in Amharic Vol. 1",
+      description: "Learn first aid for medical emergencies in Amharic Vol. 1",
       icon: <Users className="h-6 w-6 text-purple-500" />,
-      link: "https://tirta-s-school.teachable.com/p/74b8c0",
+      link: "https://tirta-s-school.teachable.com/p/422f15",
     },
   ];
 
@@ -77,7 +80,11 @@ export default function OnlineTraining({
                   </div>
                   <div>
                     <CardTitle>{service.title}</CardTitle>
-                    <CardDescription>{service.description}</CardDescription>
+                    <CardDescription>
+                      {service.description.length > 200
+                        ? `${service.description.substring(0, 200)}...`
+                        : service.description}
+                    </CardDescription>
                   </div>
                 </CardHeader>
               </Card>
@@ -92,24 +99,66 @@ export default function OnlineTraining({
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <Card className="overflow-hidden">
-                <Image
-                  src={selectedService.image}
-                  alt={selectedService.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-64 object-cover"
-                />
+                {selectedService.title === "About Our Trainings" ? (
+                  <video className=" w-full" controls preload="none">
+                    <source src="/vid.mp4" type="video/mp4" />
+                    {/* <track
+                    src="/path/to/captions.vtt"
+                    kind="subtitles"
+                    srcLang="en"
+                    label="English"
+                  /> */}
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <Image
+                    src={selectedService.image}
+                    alt={selectedService.title}
+                    width={600}
+                    height={400}
+                    className={`w-full h-64 object-cover ${
+                      selectedService.title ===
+                        "Founding members research publications" && " hidden "
+                    }`}
+                  />
+                )}
+
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-4">
+                  <h3 className="text-2xl font-bold mb-2">
                     {selectedService.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-4">
                     {selectedService.description}
                   </p>
-                  <Link href={selectedService.link} className="w-full">
-                    Learn More
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  {selectedService.bulletPoints && (
+                    <div className="space-y-4 mb-6">
+                      {selectedService.bulletPoints.map((point, index) => (
+                        <div
+                          key={index}
+                          onClick={() => {
+                            if (point.title === "Publication 1") {
+                              router.push(
+                                "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/7797328"
+                              );
+                            } else if (point.title === "Publication 2") {
+                              router.push(
+                                "https://bmcemergmed.biomedcentral.com/articles/10.1186/s12873-015-0035-4"
+                              );
+                            }
+                          }}
+                          className={`pl-4 border-l-2 ${
+                            point.title.startsWith("Publication") &&
+                            " cursor-pointer"
+                          }  border-blue-500`}
+                        >
+                          <h4 className="font-semibold">{point.title}</h4>
+                          <p className="text-gray-600  text-sm">
+                            {point.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
@@ -152,6 +201,16 @@ export default function OnlineTraining({
                   </div>
                 </motion.div>
               ))}
+              <Button
+                onClick={() =>
+                  router.push("https://tirta-s-school.teachable.com/")
+                }
+                variant="outline"
+                className="w-full  bg-brand  hover:bg-brand/80"
+              >
+                Visit all our online courses
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
             </motion.div>
           )}
         </div>
