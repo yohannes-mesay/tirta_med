@@ -10,10 +10,13 @@ export default {
 
   theme: {
     extend: {
-    //   fontFamily: {
-    //     ptserif: ['"PT Serif"', "serif"],
-    //     montserrat: ["Montserrat", "sans-serif"],
-    //   },
+      //   fontFamily: {
+      //     ptserif: ['"PT Serif"', "serif"],
+      //     montserrat: ["Montserrat", "sans-serif"],
+      //   },
+      screens: {
+        big: "1400px",
+      },
       colors: {
         brand: "#00d6c0",
         second: "#4e6dcc",

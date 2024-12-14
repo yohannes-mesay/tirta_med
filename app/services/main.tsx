@@ -3,7 +3,7 @@
 import { ReactNode, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link"
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -106,11 +106,7 @@ export default function OnlineTraining({
                   <p className="text-gray-600 mb-6">
                     {selectedService.description}
                   </p>
-                  <Link
-  href={selectedService.link}
-  target="_blank"
-className="w-full"
-                  >
+                  <Link href={selectedService.link} className="w-full">
                     Learn More
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Link>

@@ -149,7 +149,7 @@ export default function OnlineTraining({
                     <Link
                       href={training.link}
                       // variant="outline"
-                      target="_blank"
+
                       className="w-full border-blue-500 text-blue-500 hover:bg-blue-50"
                     >
                       Learn More

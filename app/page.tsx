@@ -8,6 +8,7 @@ import Partners from "./Home/partners";
 import ActionMenu from "./Home/action-menu";
 import CommunityService from "./Home/community-service";
 import TrainingSection from "./Home/video-training";
+import ChooseTirtaMed from "./Home/why-choose-tirta";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ActionMenu />
       <CommunityService />
       <TrainingSection />
+      <ChooseTirtaMed />
       {/* <MedicalCards />
       <WhyChooseUs /> */}
       <SpecialistsSection />

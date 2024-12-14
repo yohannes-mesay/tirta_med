@@ -37,13 +37,13 @@ export default function SpecialistsSection() {
   ];
 
   return (
-    <div className="mx-auto px-16 xl:px-20 max-sm:px-4 py-8">
+    <div className="mx-auto px-10 big:px-20 max-sm:px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Content Section */}
         <div className="space-y-6">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold leading-tight text-gray-900">
-              Prehosptial and Out of hospital Care
+              Prehosptial and Out-of-hospital Care
             </h1>
             <div className="h-1 w-24 bg-gradient-to-r from-brand to-yellow-400" />
 
@@ -77,13 +77,20 @@ export default function SpecialistsSection() {
         </div>
 
         {/* Video Section */}
-        <Card className="aspect-video w-full overflow-hidden max-sm:h-96 h-full rounded-lg">
+        <Card className="aspect-video w-full overflow-hidden max-sm:h-96 h-full border-none shadow-none rounded-lg">
+          <Image
+            src={etech}
+            className="rounded-lg h-full object-contain"
+            alt="etech"
+          />
+        </Card>
+        {/* <Card className="aspect-video w-full overflow-hidden max-sm:h-96 h-full rounded-lg">
           <Image
             src={etech}
             className="rounded-lg h-full object-fit"
             alt="etech"
           />
-        </Card>
+        </Card> */}
       </div>
     </div>
   );

@@ -71,11 +71,7 @@ function Footer() {
       </div>
       <div className="py-10 text-slate-100 text-xs flex items-center justify-center bg-[#00d6c0]">
         Copyright © 2024, Developed by{" "}
-        <a
-          href="https://github.com/yohannes-mesay"
-          target="_blank"
-          className="font-[italic]"
-        >
+        <a href="https://github.com/yohannes-mesay" className="font-[italic]">
           &nbsp;@yohannes
         </a>{" "}
       </div>
