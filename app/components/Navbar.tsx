@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between px-4 md:px-0 py-1 xl:mx-24 lg:mx-8 font-semibold  bg-white top-0 z-50">
+      <nav className="flex items-center justify-between px-4 md:px-0 py-1 xl:mx-4 lg:mx-8 font-semibold  bg-white top-0 z-50">
         <Link href="/">
           <Image src={logo} alt="logo" className="w-16 sm:max-w-20" />
         </Link>
@@ -42,13 +42,13 @@ function Navbar() {
             href="/yegna-ambulance"
             className={`hover:text-[#00d6c0] ${isActive("/yegna-ambulance")}`}
           >
-            Yegna Ambulance
+            Yegna Ambulance Netwrok
           </Link>
           <Link
             href="/consultancy"
             className={`hover:text-[#00d6c0] ${isActive("/consultancy")}`}
           >
-            Consultancy
+            Research & Consultancy
           </Link>
           <Link
             href="/get-help"
@@ -129,14 +129,14 @@ function Navbar() {
             className={`hover:text-[#00d6c0] ${isActive("/yegna-ambulance")}`}
             onClick={toggleSidebar}
           >
-            Yegna Ambulance
+            Yegna Ambulance Netwrok
           </Link>
           <Link
             href="/consultancy"
             className={`hover:text-[#00d6c0] ${isActive("/consultancy")}`}
             onClick={toggleSidebar}
           >
-            Consultancy
+            Research & Consultancy
           </Link>
           <Link
             href="/get-help"
