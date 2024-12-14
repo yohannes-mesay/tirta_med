@@ -14,8 +14,8 @@ import { SiFuturelearn } from "react-icons/si";
 
 import serv1 from "@/public/image4.jpg";
 // import serv2 from "@/public/serv2.jpg";
-import serv3 from "@/public/image5.jpg";
-import serv4 from "@/public/image6.jpg";
+import serv4 from "@/public/image5.jpg";
+import serv3 from "@/public/image6.jpg";
 import yegna from "@/public/image7.jpg";
 import { RiCommunityFill } from "react-icons/ri";
 import ServicesBanner from "../services/servies-banner";
@@ -59,7 +59,7 @@ const services = [
     title: "Yegna Ambulance Network",
     description:
       "Innovation meets necessity in our groundbreaking Yegna Ambulance service. This pioneering program seamlessly integrates Ethiopia's ambulance resources into a coordinated emergency response network:",
-    image: yegna,
+    image: serv4,
     link: "/what-we-do/detail",
     bulletPoints: [
       {
@@ -118,7 +118,7 @@ const services = [
     icon: <RiCommunityFill className="h-8 w-8" />,
     title: "Community Impact Initiative",
     description: "We believe in building resilient communities through:",
-    image: serv4,
+    image: yegna,
     link: "/what-we-do/detail",
     bulletPoints: [
       {

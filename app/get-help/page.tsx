@@ -13,7 +13,7 @@ import radio from "@/public/radio.jpg";
 import vol from "@/public/vol.jpg";
 import { IoIosPeople } from "react-icons/io";
 import ServicesBanner from "../services/servies-banner";
-import ServicesPage from "../services/main";
+import HelpMain from "./help-main";
 import { MdFoundation } from "react-icons/md";
 import { FaPeopleGroup } from "react-icons/fa6";
 
@@ -23,28 +23,28 @@ const services = [
     title: "Community Services",
     description: "participate in helping others.",
     image: comm,
-    link: "/get-help/detail",
+    link: "/get-help/community",
   },
   {
     icon: <MdFoundation className="h-8 w-8" />,
     title: "How to respond to emergencies",
     description: "Get trained on emergency response.",
     image: emerg2,
-    link: "/get-help/detail",
+    link: "/get-help/respond-to-emergencies",
   },
   {
     icon: <GiPocketRadio className="h-8 w-8" />,
     title: "Radio Show",
     description: "Tune into our informative radio show.",
     image: radio,
-    link: "/get-help/detail",
+    link: "/get-help/radio-show",
   },
   {
     icon: <IoIosPeople className="h-8 w-8" />,
     title: "Volunteer with us",
     description: "Join our volunteer program.",
     image: vol,
-    link: "/get-help/detail",
+    link: "/get-help/volunteer",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function page() {
   return (
     <div>
       <ServicesBanner banner={banner1} title="Get Help" />
-      <ServicesPage services={services} />
+      <HelpMain services={services} />
       {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />
     </div>
