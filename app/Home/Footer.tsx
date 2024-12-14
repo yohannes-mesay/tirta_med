@@ -5,11 +5,7 @@ import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import {
-  FaFacebookF,
-  FaLinkedin,
-  FaTelegramPlane,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
   const router = useRouter();
@@ -30,7 +26,7 @@ export default function Footer() {
     },
   ];
   const usefulLinks = [
-    { name: "Courses", href: "#" },
+    { name: "Courses", href: "https://tirta-s-school.teachable.com/p/11" },
     { name: "Terms of use", href: "#" },
     { name: "Privacy policy", href: "#" },
     { name: "Careers", href: "contact" },
@@ -55,12 +51,13 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-2 mb-6">
                 <Image src={logo} className="w-10" alt="Tirtamed" />
-                <h2 className="text-2xl font-bold">Tirtamed</h2>
+                <h2 className="text-2xl font-bold">TirtaMed</h2>
               </div>
               <p className="text-gray-300">
-                We offer comprehensive medical training programs designed to
-                advance your career in the healthcare industry. Join us to gain
-                the skills and knowledge needed to excel in your profession.
+                We provide emergency response training, a coordinated ambulance
+                network, research, and community programs to transform
+                healthcare in Ethiopia. Join us in saving lives and building
+                resilient communities.
               </p>
             </div>
 
@@ -106,7 +103,7 @@ export default function Footer() {
 
             {/* Working Hours */}
             <div>
-              <h3 className="text-xl font-bold mb-6">Working Hours</h3>
+              <h3 className="text-xl font-bold mb-6">Office Hours</h3>
               <div className="space-y-3 mb-6">
                 {workingHours.map((schedule, index) => (
                   <div
@@ -129,17 +126,23 @@ export default function Footer() {
 
           {/* Footer Bottom */}
           <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400">
-              © 2024 Tirtamed. All rights reserved.
+            <p className="text-gray-400 text-sm">
+              ©Developed by{" "}
+              <Link
+                href="https://github.com/yohannes-mesay"
+                className="text-slate-400 "
+                target="_blank"
+              >
+                Yohannes
+              </Link>
             </p>
             {/* <p className="text-gray-400">
               © 2024, Designed and Developed By{" "}
-              <Link href="https://t.me/Yuhe5" target="_blank" className="text-brand">Yohannes</Link>
+              <Link href="https://t.me/Yuhe5"  className="text-brand">Yohannes</Link>
             </p> */}
             <div className="flex items-center gap-4">
               <Link
                 href="https://www.facebook.com/profile.php?id=61555632226474&mibextid=ZbWKwL"
-                target="_blank"
                 className="text-gray-700 rounded-full flex items-center justify-center w-8 h-8 bg-white transition-colors"
               >
                 {/* <Facebook className="w-5 h-5" /> */}
@@ -147,7 +150,6 @@ export default function Footer() {
               </Link>
               <Link
                 href="https://t.me/tirtamed"
-                target="_blank"
                 className="text-gray-700 rounded-full flex items-center justify-center w-8 h-8 bg-white transition-colors"
               >
                 {/* <Facebook className="w-5 h-5" /> */}
@@ -161,7 +163,6 @@ export default function Footer() {
               </Link> */}
               <Link
                 href="https://www.linkedin.com/company/tirtamed-plc/"
-                target="_blank"
                 className="text-gray-700 rounded-full flex items-center justify-center w-8 h-8 bg-white transition-colors"
               >
                 {/* <Facebook className="w-5 h-5" /> */}

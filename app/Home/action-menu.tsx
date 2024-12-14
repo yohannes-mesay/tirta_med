@@ -47,7 +47,7 @@ export default function ActionMenu() {
             <IoIosDesktop className="w-20 h-20 md:w-36 md:h-36 lg:w-36 lg:h-36" />
           }
           title="Begin Online Courses"
-          link="#"
+          link="https://tirta-s-school.teachable.com/"
         />
 
         <ActionCard
@@ -74,7 +74,7 @@ export default function ActionMenu() {
             <GiFirstAidKit className="w-20 h-20 md:w-36 md:h-36 lg:w-36 lg:h-36" />
           }
           title="First Aid Tips"
-          link="how-to-respond-emergency"
+          link="get-helps/how-to-respond-emergency"
         />
 
         <ActionCard
@@ -82,7 +82,7 @@ export default function ActionMenu() {
             <FaHandsHelping className="w-20 h-20 md:w-36 md:h-36 lg:w-36 lg:h-36" />
           }
           title="Volunteer with us"
-          link="get-help"
+          link="get-help/volunteer-with-us"
         />
       </div>
     </div>

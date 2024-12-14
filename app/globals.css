@@ -200,7 +200,7 @@ body {
   }
 }
 .slide-in-right {
-  animation: slide-in-right 1s ease-in-out;
+  animation: slide-in-right 0.5s ease-in-out;
 }
 
 @keyframes slide-in-right {

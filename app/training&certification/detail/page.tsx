@@ -6,7 +6,6 @@ import ServicesBanner from "@/app/services/servies-banner";
 // import dynamic from "next/dynamic";
 import React from "react";
 import banner1 from "@/public/tirtabanner.jpg";
-
 // const LeafletMap = dynamic(() => import("../../Home/MapComponent"), {
 //   ssr: false,
 // });

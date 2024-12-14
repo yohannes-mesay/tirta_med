@@ -8,14 +8,18 @@ import pone from "@/public/pone.jpg";
 import ptwo from "@/public/ptwo.jpg";
 import pt from "@/public/pthree.png";
 // import pf from "@/public/pfour.jpg";
-import pfive from "@/public/pfive.jpg";
+import pfive from "@/public/etechn.jpg";
+import psix from "@/public/psi.jpg";
+import pseven from "@/public/nado.jpg";
 import Image from "next/image";
 import Link from "next/link";
 const partnerLogos = [
-  { image: pone, name: "Safaricom", link: "https://safaricom.et/" },
-  { image: ptwo, name: "MSI", link: "https://www.msichoices.org/" },
-  { image: pt, name: "Huawei", link: "https://www.huawei.com/en/" },
-  { image: pfive, name: "Name 4", link: "" },
+  { image: ptwo, name: "", link: "https://www.msichoices.org/" },
+  { image: pone, name: "", link: "https://safaricom.et/" },
+  { image: pt, name: "", link: "https://www.huawei.com/en/" },
+  { image: pfive, name: "", link: "https://etechsc.com/" },
+  { image: pseven, name: "", link: "https://nadorawellness.com/" },
+  { image: psix, name: "", link: "https://www.psi.org" },
 ];
 
 // Custom Next Arrow
@@ -72,7 +76,7 @@ export default function Partners() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -128,7 +132,7 @@ export default function Partners() {
           {/* <p className="max-w-2xl mx-auto text-gray-600 py-3">
             We are proud to collaborate with industry-leading partners who share
             our commitment to excellence and innovation in the medical field.
-          </p> */}  
+          </p> */}
         </div>{" "}
       </div>
 
@@ -140,17 +144,24 @@ export default function Partners() {
           <div key={index} className="p-4">
             <Link
               href={partner.link}
-              target="_blank"
               className="p-4 rounded-lg py-0 outline-none flex flex-col items-center"
             >
-              <Image
-                src={partner.image}
-                alt={partner.name}
-                className="h-48 w-48 outline-none object-cover rounded-md mb-4"
-              />
-              {/* <h3 className="font-semibold text-center text-gray-700">
+              {partner.image.src === psix.src ? (
+                <Image
+                  src={partner.image}
+                  alt={partner.name}
+                  className="h-32 w-32 mt-8 outline-none rounded-md mb-4"
+                />
+              ) : (
+                <Image
+                  src={partner.image}
+                  alt={partner.name}
+                  className="h-48 w-48 outline-none object-contain rounded-md mb-4"
+                />
+              )}
+              <h3 className="font-semibold text-center text-gray-700">
                 {partner.name}
-              </h3> */}
+              </h3>
             </Link>
           </div>
         ))}

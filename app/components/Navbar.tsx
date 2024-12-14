@@ -50,16 +50,16 @@ function Navbar() {
           >
             Consultancy
           </Link>
-          <div className="w-1 rounded-full h-6 border bg-slate-900"></div>
           <Link
             href="/get-help"
             className={`hover:text-[#00d6c0] ${isActive("/get-help")}`}
           >
             Get help
           </Link>
+          <div className="w-1 rounded-full h-6 border bg-slate-900"></div>
 
           <Link
-            href="#"
+            href="https://tirta-s-school.teachable.com/"
             className="bg-[#00d6c0] text-white rounded-md px-4 py-2 hover:scale-105 duration-200"
           >
             Courses

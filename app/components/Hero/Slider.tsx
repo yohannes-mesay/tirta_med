@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Paper, useMediaQuery, useTheme } from "@mui/material";
-import banner1 from "@/public/banner1.jpg";
+import banner1 from "@/public/image1.jpg";
 import Link from "next/link";
 
 function Slider() {
@@ -27,14 +27,14 @@ function Slider() {
         padding: isSmallScreen ? "10px" : "20px",
       }}
     >
-      <div className="absolute flex flex-col text-start left-5 max-sm:w-3/4  md:left-20 gap-5">
-        <div className=" top-0 pt-serif-bold tracking-wider text-second  text-5xl max-sm:text-2xl sm:max-w-[40rem]  relative font-semibold slide-in-right ">
+      <div className="absolute max-sm:hidden flex flex-col p-2 rounded-xl text-start bg-white left-5 max-sm:w-3/4 md:left-20 gap-5 bottom-[10%]">
+        <div className=" top-0 pt-serif-bold tracking-wider text-second  text-5xl max-sm:text-2xl sm:max-w-[35rem]  relative font-semibold ">
           Community-Focused Healthcare Solutions
         </div>
         <div className="slide-in-left  text-black text-md sm:text-lg text-xs md:text-xl relative  sm:max-w-[28rem] slide-in-bottom ">
           TirtaMed, where our name embodies the essence of pulsatility!
         </div>
-        <div className="slide-in-left flex gap-9">
+        <div className="slide-in-right flex gap-9">
           <Link
             href="/about"
             className="bg-brand rounded-3xl px-5 max-sm:px-3 max-sm:text-xs max-sm:py-0.5 py-2"
