@@ -22,12 +22,10 @@ export default function AboutMain({ sections, title, desc }: AboutSectionProps) 
     <div className="space-y-4 mb-4 px-2 sm:px-16">
       <div className="w-full text-center pt-4">
         <div className="text-center ">
-          <h2 className="text-5xl  font-bold tracking-tight text-[#068073]">
+          <h2 className="text-5xl mb-4 font-bold tracking-tight text-[#068073]">
             {title}
           </h2>
-          <div className="flex justify-center">
-            <div className="w-4 h-2 bg-[#00D2C1] pt-2 wavy-line" />
-          </div>
+      
         </div>{" "}
       </div>
       <p className="text-lg text-gray-800 text-center max-w-4xl mx-auto">

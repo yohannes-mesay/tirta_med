@@ -18,20 +18,20 @@ function Slider() {
         position: "relative",
         justifyContent: "center",
         backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundSize: isSmallScreen ? "cover" : "fit",
         backgroundImage: `url(${banner1.src})`,
         color: "white",
-        height: isSmallScreen ? "50vh" : isMedium ? "65vh" : "80vh",
+        height: isSmallScreen ? "50vh" : isMedium ? "65vh" : "110vh",
         width: "100%",
         objectFit: "contain",
         padding: isSmallScreen ? "10px" : "20px",
       }}
     >
-      <div className="absolute max-sm:hidden flex flex-col p-2 rounded-xl text-start bg-white left-5 max-sm:w-3/4 md:left-20 gap-5 bottom-[10%]">
-        <div className=" top-0 pt-serif-bold tracking-wider text-second  text-5xl max-sm:text-2xl sm:max-w-[35rem]  relative font-semibold ">
+      <div className="absolute max-sm:hidden flex flex-col p-2 rounded-xl text-start   left-5 max-sm:w-3/4 md:left-20 gap-5  ">
+        <div className=" top-0 font-extrabold tracking-wider text-white  text-5xl max-sm:text-2xl sm:max-w-[35rem]  relative">
           Community-Focused Healthcare Solutions
         </div>
-        <div className="slide-in-left  text-black text-md sm:text-lg text-xs md:text-xl relative  sm:max-w-[28rem] slide-in-bottom ">
+        <div className="slide-in-left  text-white text-md sm:text-lg text-xs md:text-xl relative text-bold sm:max-w-[28rem] slide-in-bottom ">
           TirtaMed, where our name embodies the essence of pulsatility!
         </div>
         <div className="slide-in-right flex gap-9">

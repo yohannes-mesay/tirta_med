@@ -52,10 +52,8 @@ export default function Pricing() {
   return (
     <div className="py-16 px-4 md:px-32">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">Pricing</h2>
-        <div className="flex justify-center">
-          <div className="w-4 h-2 bg-[#00D2C1] pt-2 wavy-line" />
-        </div>
+        <h2 className="text-4xl font-bold mb-4 text-gray-900">Pricing</h2>
+       
         <p className="max-w-2xl mx-auto text-gray-600 py-3">
           Choose the best training package that suits your needs and start your
           journey towards becoming a certified medical professional.

@@ -126,9 +126,7 @@ export default function Partners() {
           <h2 className="text-4xl font-bold text-gray-900">
             Our partners and clients
           </h2>
-          <div className="flex justify-center">
-            <div className="w-4 h-2 bg-[#00D2C1] pt-2 wavy-line" />
-          </div>
+          <div className="flex justify-center"></div>
           {/* <p className="max-w-2xl mx-auto text-gray-600 py-3">
             We are proud to collaborate with industry-leading partners who share
             our commitment to excellence and innovation in the medical field.
