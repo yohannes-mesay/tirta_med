@@ -33,28 +33,15 @@ export default function TrainingSection() {
         <Card className="border-none shadow-none">
           <CardContent className="grid gap-10">
             {/* First Article */}
-            <article className="grid md:grid-cols-[1fr,1.5fr] gap-6 items-start">
-              <div className="relative  h-full  rounded-lg ">
-                {/* <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/gn6xt1ca8A0"
-                  title="Medical Training Introduction"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                /> */}
+            <article className="flex flex-col md:flex-row  ">
+              <div className="relative w-full   aspect-video md:aspect-auto">
                 <video
-                  className="absolute inset-0  h-full w-full"
+                  className="absolute inset-0 h-full w-full object-cover"
                   controls
                   poster="/image.png"
                   preload="none"
                 >
-                  <source src="/vid.mp4" type="video/mp4" />
-                  {/* <track
-                    src="/path/to/captions.vtt"
-                    kind="subtitles"
-                    srcLang="en"
-                    label="English"
-                  /> */}
+                  <source src="/video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
