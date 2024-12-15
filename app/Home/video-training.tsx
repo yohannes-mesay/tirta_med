@@ -18,7 +18,7 @@ export default function TrainingSection() {
       </div> */}
       <div className="w-full text-center pt-2 mb-4">
         <div className="text-center ">
-          <h2 className="sm:text-4xl mb-4 px-2 font-bold text-gray-900">
+          <h2 className="sm:text-4xl mb-10 px-2 font-bold text-gray-900">
             We are dedicated to transforming your hands into instruments of
             healing!
           </h2>

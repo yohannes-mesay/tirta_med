@@ -33,9 +33,9 @@ export default function AboutDetail() {
               </div> */}
               <div className="flex flex-col gap-4 md:pl-12">
                 <div className="space-y-2">
-                  <h2 className="text-2xl text-center font-bold tracking-tight text-[#068073]">
+                  {/* <h2 className="text-2xl text-center font-bold tracking-tight text-[#068073]">
                     About Us
-                  </h2>
+                  </h2> */}
                   <p className="text-md text-gray-800 text-center">
                     {showFullText.aboutUs
                       ? `Founded in 2017, TirtaMed Private Limited Company emerged from a shared vision among leading Ethiopian researchers and specialists in emergency and critical care medicine. Our founders combined decades of expertise with an intimate understanding of Ethiopia's healthcare landscape to create a company dedicated to transforming emergency medical care in our nation. At TirtaMed, we understand the unique challenges facing emergency healthcare in Ethiopia, from urban centers to rural communities. Drawing from our deep experience in the Ethiopian medical sector, we are committed to developing solutions that address our country's specific needs, infrastructure, and healthcare delivery systems. Through our work, we are building a future where quality emergency medical care is accessible to all Ethiopians, contributing to the strengthening of our nation's healthcare system.`

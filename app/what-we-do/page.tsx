@@ -27,6 +27,8 @@ const services = [
   {
     icon: <SiFuturelearn className="h-8 w-8" />,
     title: "Emergency Response Training",
+    subtitle:
+      "We deliver comprehensive first aid and emergency response trainings",
     description:
       "We deliver comprehensive first aid and emergency response trainings tailored for:",
     image: serv1,
@@ -57,6 +59,8 @@ const services = [
   {
     icon: <PiAmbulanceFill className="h-8 w-8" />,
     title: "Yegna Ambulance Network",
+    subtitle:
+      "Innovation meets necessity in our groundbreaking Yegna Ambulance service. This pioneering program seamlessly integrates Ethiopia's ambulance resources into a coordinated emergency response network",
     description:
       "Innovation meets necessity in our groundbreaking Yegna Ambulance service. This pioneering program seamlessly integrates Ethiopia's ambulance resources into a coordinated emergency response network:",
     image: serv4,
@@ -87,6 +91,8 @@ const services = [
   {
     icon: <GiArchiveResearch className="h-8 w-8" />,
     title: "Research and Consultancy",
+    subtitle:
+      "Our research and consultancy division drives innovation in Ethiopian emergency medical services",
     description:
       "Our research and consultancy division drives innovation in Ethiopian emergency medical services:",
     image: serv3,
@@ -117,6 +123,7 @@ const services = [
   {
     icon: <RiCommunityFill className="h-8 w-8" />,
     title: "Community Impact Initiative",
+    subtitle: "We believe in building resilient communities ",
     description: "We believe in building resilient communities through:",
     image: yegna,
     link: "/what-we-do/detail",

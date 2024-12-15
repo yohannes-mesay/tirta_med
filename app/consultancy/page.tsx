@@ -18,6 +18,7 @@ const services = [
   {
     icon: <FaPeopleGroup className="h-8 w-8" />,
     title: "About our research and consultancy services",
+    subtitle: "Cutting-edge research and consultancy services",
     description:
       "At TirtaMed, we provide cutting-edge research and consultancy services tailored to advance emergency and prehospital care systems. Our team of experts delivers evidence-based solutions, leveraging the latest innovations and global best practices.",
     image: res,
@@ -27,6 +28,7 @@ const services = [
   {
     icon: <MdFoundation className="h-8 w-8" />,
     title: "Founding members research publications",
+    subtitle: "Our commitment to driving meaningful change ",
     description:
       "Our founding members have contributed extensively to advancing emergency and critical care through impactful research. Below is a curated selection of their publications, showcasing innovative approaches, evidence-based practices, and solutions tailored to the unique challenges of healthcare delivery in Ethiopia and East Africa.",
     image: need,
@@ -62,6 +64,7 @@ const services = [
   {
     icon: <IoHelpBuoy className="h-8 w-8" />,
     title: "Online Resources ",
+    subtitle: "Discover a collection of online resources ",
     description:
       "Discover a collection of online resources designed to support healthcare professionals, researchers, and policymakers. From clinical guidelines and training modules to insights from the latest studies, our resources are a gateway to empowering individuals and organisations to transform emergency medical services. At TirtaMed, we are dedicated to fostering knowledge sharing and collaboration for a healthier future.",
     image: online,

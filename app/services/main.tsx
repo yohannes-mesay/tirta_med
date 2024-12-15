@@ -22,6 +22,7 @@ interface BulletPoint {
 interface Service {
   icon: ReactNode;
   title: string;
+  subtitle: string;
   description: string;
   image: StaticImageData;
   link: string;
@@ -80,34 +81,36 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                   </div>
                   <div>
                     <CardTitle>{service.title}</CardTitle>
-                    <CardDescription>
-                      {service.description.length > 200
-                        ? `${service.description.substring(0, 200)}...`
-                        : service.description}
-                    </CardDescription>
+                    <CardDescription>{service.subtitle}</CardDescription>
                   </div>
                 </CardHeader>
+                {selectedService.title === service.title &&
+                  service.bulletPoints && (
+                    <CardContent>
+                      <ul className="list-disc pl-5 space-y-2">
+                        {service.bulletPoints.map((point, idx) => (
+                          <li key={idx} className="text-sm text-gray-600">
+                            {point.title}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  )}
               </Card>
             ))}
           </motion.div>
 
-          {selectedService.title !== "Online Trainings" ? (
-            <motion.div
-              className="mt-8 md:mt-0"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <Card className="overflow-hidden">
+          <motion.div
+            className="mt-8 md:mt-0 h-full"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            {selectedService.title !== "Online Trainings" ? (
+              <Card className="overflow-hidden h-full flex flex-col">
                 {selectedService.title === "About Our Trainings" ? (
-                  <video className=" w-full" controls preload="none">
+                  <video className="w-full" controls preload="none">
                     <source src="/vid.mp4" type="video/mp4" />
-                    {/* <track
-                    src="/path/to/captions.vtt"
-                    kind="subtitles"
-                    srcLang="en"
-                    label="English"
-                  /> */}
                     Your browser does not support the video tag.
                   </video>
                 ) : (
@@ -118,12 +121,12 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                     height={400}
                     className={`w-full h-64 object-cover ${
                       selectedService.title ===
-                        "Founding members research publications" && " hidden "
+                        "Founding members research publications" && "hidden"
                     }`}
                   />
                 )}
 
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex-grow">
                   <h3 className="text-2xl font-bold mb-2">
                     {selectedService.title}
                   </h3>
@@ -148,11 +151,11 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                           }}
                           className={`pl-4 border-l-2 ${
                             point.title.startsWith("Publication") &&
-                            " cursor-pointer"
+                            "cursor-pointer"
                           }  border-blue-500`}
                         >
                           <h4 className="font-semibold">{point.title}</h4>
-                          <p className="text-gray-600  text-sm">
+                          <p className="text-gray-600 text-sm">
                             {point.description}
                           </p>
                         </div>
@@ -161,58 +164,57 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                   )}
                 </CardContent>
               </Card>
-            </motion.div>
-          ) : (
-            <motion.div
-              className="mt-8 md:mt-0 space-y-6"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <h2 className="text-3xl font-bold mb-6 text-second">
-                Online Trainings
-              </h2>
-              {onlineTrainings.map((training, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 * index }}
-                >
-                  <div className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div className="mr-4 p-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-200">
-                        {training.icon}
-                      </div>
-                      <h3 className="text-xl font-semibold">
-                        {training.title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">{training.description}</p>
-                    <Button
-                      onClick={() => router.push(training.link)}
-                      variant="outline"
-                      className="w-full border-blue-500 text-blue-500 hover:bg-blue-50"
+            ) : (
+              <div className="space-y-6 h-full flex flex-col">
+                <h2 className="text-3xl font-bold mb-6 text-second">
+                  Online Trainings
+                </h2>
+                <div className="space-y-4 flex-grow">
+                  {onlineTrainings.map((training, index) => (
+                    <motion.div
+                      key={index}
+                      className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2 * index }}
                     >
-                      Learn More
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                </motion.div>
-              ))}
-              <Button
-                onClick={() =>
-                  router.push("https://tirta-s-school.teachable.com/")
-                }
-                variant="outline"
-                className="w-full  bg-brand  hover:bg-brand/80"
-              >
-                Visit all our online courses
-                <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
-            </motion.div>
-          )}
+                      <div className="p-6">
+                        <div className="flex items-center mb-4">
+                          <div className="mr-4 p-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-200">
+                            {training.icon}
+                          </div>
+                          <h3 className="text-xl font-semibold">
+                            {training.title}
+                          </h3>
+                        </div>
+                        <p className="text-gray-600 mb-4">
+                          {training.description}
+                        </p>
+                        <Button
+                          onClick={() => router.push(training.link)}
+                          variant="outline"
+                          className="w-full border-blue-500 text-blue-500 hover:bg-blue-50"
+                        >
+                          Learn More
+                          <ChevronRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+                <Button
+                  onClick={() =>
+                    router.push("https://tirta-s-school.teachable.com/")
+                  }
+                  variant="outline"
+                  className="w-full bg-brand hover:bg-brand/80"
+                >
+                  Visit all our online courses
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            )}
+          </motion.div>
         </div>
       </div>
     </div>

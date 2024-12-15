@@ -23,6 +23,7 @@ const services = [
     icon: <Stethoscope className="h-8 w-8" />,
     title: "Clinical Skills Training",
     link: "",
+    subtitle: "",
     description:
       "Hands-on training in essential clinical procedures and patient care techniques.",
     image: serv1,
@@ -31,6 +32,7 @@ const services = [
     icon: <Book className="h-8 w-8" />,
     title: "Medical Knowledge Courses",
     link: "Medical Knowledge Courses",
+    subtitle: "Medical Knowledge Courses",
     description:
       "Comprehensive courses covering the latest advancements in medical science and practice.",
     image: serv2,
@@ -39,6 +41,7 @@ const services = [
     icon: <Users className="h-8 w-8" />,
     title: "Team-Based Learning",
     link: "Team-Based Learning",
+    subtitle: "Team-Based Learning",
     description:
       "Collaborative training sessions to improve teamwork in healthcare settings.",
     image: serv3,
@@ -47,6 +50,7 @@ const services = [
     icon: <Notebook className="h-8 w-8" />,
     title: "Certification Programs",
     link: "Certification Programs",
+    subtitle: "Certification Programs",
     description:
       "Accredited certification programs for various medical specialties and skills.",
     image: serv4,
@@ -55,6 +59,7 @@ const services = [
     icon: <Microscope className="h-8 w-8" />,
     title: "Research Methodology",
     link: "Research Methodology",
+    subtitle: "Research Methodology",
     description:
       "Training in cutting-edge research methods and data analysis for healthcare.",
     image: serv5,
@@ -63,6 +68,7 @@ const services = [
     icon: <FaFirstAid className="h-8 w-8" />,
     title: "Emergency Response",
     link: "Emergency Response",
+    subtitle: "Emergency Response",
     description:
       "Intensive training for quick and effective responses in medical emergencies.",
     image: serv1,

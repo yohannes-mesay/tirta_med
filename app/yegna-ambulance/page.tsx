@@ -22,6 +22,7 @@ const services = [
   {
     icon: <IoExtensionPuzzleOutline className="h-8 w-8" />,
     title: "Prehospital Care Excellence",
+    subtitle: "Technology driven ambulance service",
     description:
       "When emergencies strike, every second counts. Our network of highly trained medical professionals delivers advanced life support and emergency care directly at the scene. We maintain multiple tiers of ambulance service, strategically placed to minimize response times across our coverage areas.",
     image: amb,
@@ -31,6 +32,7 @@ const services = [
   {
     icon: <HiOutlineStatusOnline className="h-8 w-8" />,
     title: "Powered by Innovation and Digital Integration",
+    subtitle: "Stay updated with our latest partnerships and collaborations",
     description:
       "Through our partnership with eTech, a leading technology company in Ethiopia, Yegna Ambulance Network utilizes cutting-edge digital solutions to enhance every aspect of our service. Our smart dispatch system provides real-time ambulance tracking and automated deployment of the nearest units, ensuring the fastest possible response times. Our 24/7 command center coordinates all emergency responses through an advanced communication platform. This central hub manages resources, tracks performance, and ensures optimal response to every emergency call.",
     image: need,
@@ -40,6 +42,7 @@ const services = [
   {
     icon: <GiArchiveResearch className="h-8 w-8" />,
     title: "Quality Assurance",
+    subtitle: "Based on customer need",
     description:
       "We uphold the highest standards through regular staff training, provision of emergency kits, and continuous performance monitoring. Our teams regularly update their certifications to stay aligned with the latest emergency care protocols.",
     image: etech,
@@ -49,6 +52,7 @@ const services = [
   {
     icon: <FaServicestack className="h-8 w-8" />,
     title: "Service Options",
+    subtitle: "We uphold the highest standards ",
     description:
       "Whether you require emergency or non-emergency medical transport, our services are available 24/7. We provide:",
     image: image15,
@@ -64,6 +68,7 @@ const services = [
   {
     icon: <GiJoin className="h-8 w-8" />,
     title: "Join Our Network",
+    subtitle: "Together, we're building Ethiopia’s EMS system",
     description:
       "Yegna Ambulance Network welcomes partnerships with healthcare facilities, emergency service providers, and medical transport companies. Together, we're building Ethiopia's most reliable pre-hospital care system.Contact us to learn more about our services or to become part of our growing network of healthcare partners.",
     image: image16,

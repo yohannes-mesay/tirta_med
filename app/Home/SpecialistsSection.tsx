@@ -67,13 +67,14 @@ export default function SpecialistsSection() {
               </div>
             ))}
           </div>
-
-          <Button
-            onClick={() => router.push("yegna-ambulance")}
-            className="bg-brand hover:bg-brand/90 text-black"
-          >
-            Read More
-          </Button>
+          <div className="w-full  flex items-center justify-center">
+            <Button
+              onClick={() => router.push("yegna-ambulance")}
+              className="bg-brand hover:bg-brand/90 r text-black"
+            >
+              Read More
+            </Button>
+          </div>
         </div>
 
         {/* Video Section */}

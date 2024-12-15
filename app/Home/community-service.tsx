@@ -5,24 +5,24 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function SpikingAwareness() {
   return (
-    <div className="relative w-full max-w-[75rem] mx-auto my-2 overflow-hidden max-sm:h-96">
+    <div className="relative w-full max-w-[78rem] mx-auto my-2  max-sm:h-96">
       <Link
         href="/get-help"
         className="block relative w-full h-[300px] sm:h-[350px] md:h-[400px]"
       >
-        <div className="absolute right-0 max-w-4xl  top-0 bottom-0 w-full rounded-3xl overflow-hidden">
+        <div className="absolute right-0 max-w-4xl  top-0 bottom-0 w-full rounded-lg overflow-hidden">
           {/* Background Image */}
           <Image
             src={community}
             alt="Crowd at a venue with blue and pink lighting"
             fill
-            className="object-cover max-sm:pr-2 rounded-2xl"
+            className="object-cover max-sm:pr-2 rounded-xs"
             priority
           />
         </div>
 
         {/* Content Card */}
-        <div className="absolute sm:bottom-6 max-sm:-bottom-24  sm:-left-10 w-[90%] sm:w-[90%] md:w-[80%] max-w-[450px] mx-4 z-10">
+        <div className="absolute sm:bottom-6 max-sm:-bottom-24 sm:-left-10 xl:-left-16 w-[90%] sm:w-[90%] md:w-[80%] max-w-[450px] mx-4 z-10">
           <div className="relative bg-[#FFF9C4] p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">
               Community Service

@@ -26,6 +26,7 @@ const services = [
   {
     icon: <MdModelTraining className="h-8 w-8" />,
     title: "About Our Trainings",
+    subtitle: "Designed to meet diverse learning needs",
     description:
       "Our first aid training programs are designed to meet diverse learning needs while maintaining the highest standards of medical education. Each program is carefully structured to provide both theoretical knowledge and hands-on practical experience, delivered by certified instructors with extensive field experience. Whether you're a healthcare professional, first responder, or community member, our courses equip you with the skills and confidence to handle emergency situations effectively.",
     image: training3,
@@ -35,70 +36,29 @@ const services = [
   {
     icon: <MdComputer className="h-8 w-8" />,
     title: "Online Trainings",
+    subtitle: "Latest emergency medical courses",
     description:
       "Latest medical science courses delivered through our interactive digital learning platform.",
     image: training3,
     link: "/training&certification/detail",
     bulletPoints: [
-      { title: "Interactive digital learning platform", description: "" },
-      { title: "Self-paced modules with multimedia content", description: "" },
-      { title: "Virtual simulations of emergency scenarios", description: "" },
-      { title: "Real-time assessments and feedback", description: "" },
-      {
-        title: "Access to digital resources and reference materials",
-        description: "",
-      },
-      { title: "Flexibility to learn anytime, anywhere", description: "" },
-      { title: "Regular online instructor support", description: "" },
-      { title: "Automated certification upon completion", description: "" },
+      // { title: "Interactive digital learning platform", description: "" },
+      // { title: "Self-paced modules with multimedia content", description: "" },
+      // { title: "Virtual simulations of emergency scenarios", description: "" },
+      // { title: "Real-time assessments and feedback", description: "" },
+      // {
+      //   title: "Access to digital resources and reference materials",
+      //   description: "",
+      // },
+      // { title: "Flexibility to learn anytime, anywhere", description: "" },
+      // { title: "Regular online instructor support", description: "" },
+      // { title: "Automated certification upon completion", description: "" },
     ],
   },
-  // {
-  //   icon: <BiSolidMessageDetail className="h-8 w-8" />,
-  //   title: "Why Choose TirtaMed's Training?",
-  //   description:
-  //     "TirtaMed offers accredited CPD courses with hands-on clinical training and recognized certification.",
-  //   image: training7,
-  //   link: "/training&certification/detail",
-  //   bulletPoints: [
-  //     {
-  //       title:
-  //         "Internationally aligned curriculum adapted to Ethiopian context",
-  //       description: "",
-  //     },
-  //     {
-  //       title: "Training materials available in the local language",
-  //       description: "",
-  //     },
-  //     {
-  //       title:
-  //         "Experienced instructors with practical emergency response background",
-  //       description: "",
-  //     },
-  //     { title: "Diverse learning methodologies", description: "" },
-  //     {
-  //       title: "Flexible learning options to suit your schedule",
-  //       description: "",
-  //     },
-  //     {
-  //       title: "Regular updates incorporating latest medical guidelines",
-  //       description: "",
-  //     },
-  //     { title: "Post-training support and resources", description: "" },
-  //     {
-  //       title: "Network of certified first aid professionals",
-  //       description: "",
-  //     },
-  //     {
-  //       title: "Recognized certification for professional development",
-  //       description: "",
-  //     },
-  //   ],
-  // },
-
   {
     icon: <RiCommunityFill className="h-8 w-8" />,
     title: "Face-to-Face Training (Classroom)",
+    subtitle: "Direct interaction with expert instructors",
     description:
       "Intensive hands-on practical sessions with direct interaction with expert instructors.",
     image: training1,
@@ -119,6 +79,7 @@ const services = [
   {
     icon: <GiArchiveResearch className="h-8 w-8" />,
     title: "Hybrid Training",
+    subtitle: "Combines the best of online and classroom learning",
     description:
       "Combines the best of online and classroom learning for comprehensive skill development.",
     image: training6,
@@ -146,6 +107,7 @@ const services = [
   {
     icon: <MdOutlineModelTraining className="h-8 w-8" />,
     title: "Refresher Training",
+    subtitle: "Certificate renewal opportunities",
     description:
       "Regular updates on latest first aid protocols and skill reinforcement.",
     image: training4,
@@ -166,6 +128,7 @@ const services = [
   {
     icon: <FaCertificate className="h-8 w-8" />,
     title: "Certification Process",
+    subtitle: "All our training programs lead to recognized certification ",
     description:
       "Comprehensive theoretical assessment and practical skills evaluation for recognized certification.",
     image: training8,

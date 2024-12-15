@@ -17,8 +17,8 @@ const partnerLogos = [
   { image: ptwo, name: "", link: "https://www.msichoices.org/" },
   { image: pone, name: "", link: "https://safaricom.et/" },
   { image: pt, name: "", link: "https://www.huawei.com/en/" },
-  { image: pfive, name: "", link: "https://etechsc.com/" },
   { image: pseven, name: "", link: "https://nadorawellness.com/" },
+  { image: pfive, name: "", link: "https://etechsc.com/" },
   { image: psix, name: "", link: "https://www.psi.org" },
 ];
 
@@ -148,7 +148,7 @@ export default function Partners() {
                 <Image
                   src={partner.image}
                   alt={partner.name}
-                  className="h-32 w-32 mt-8 outline-none rounded-md mb-4"
+                  className="h-28 w-28 mt-8 outline-none rounded-md mb-4"
                 />
               ) : (
                 <Image

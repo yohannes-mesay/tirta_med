@@ -10,7 +10,7 @@ export default function ChooseTirtaMed() {
             <h2 className="text-4xl mb-4 font-bold text-gray-900">
               Why Choose TirtaMed&apos;s Training
             </h2>
-           
+
             {/* <p className="max-w-2xl mx-auto text-gray-600 py-3">
             We are proud to collaborate with industry-leading partners who share
             our commitment to excellence and innovation in the medical field.
@@ -20,10 +20,10 @@ export default function ChooseTirtaMed() {
         <p className="md:text-lg text-gray-800 mx-2 md:mx-20 text-center mb-8">
           TirtaMed is an accredited CPD provider, and its courses are also
           accredited. All our training programs lead to recognized certification
-          upon successful completion. Our certification process includes:
+          upon successful completion. The training service includes:
         </p>
       </div>
-      <div className="flex max-sm:flex-col max-sm:px-4 justify-around items-center ">
+      <div className="flex max-sm:flex-col max-sm:px-4 justify-around px-28 items-center ">
         <Card className="  shadow-none border-none">
           <ul className="space-y-4">
             {[

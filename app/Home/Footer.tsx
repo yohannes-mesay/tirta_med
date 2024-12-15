@@ -13,12 +13,10 @@ export default function Footer() {
     {
       type: "Email",
       value: "Admin@tirtamed.com",
-      href: "Admin@tirtamed.com",
     },
     {
       type: "Phone",
       value: "+251905630063",
-      href: "tel:+251905630063",
     },
     {
       type: "Location",
@@ -68,16 +66,8 @@ export default function Footer() {
                 {contactInfo.map((info, index) => (
                   <div key={index}>
                     <p className="text-sm text-gray-400">{info.type}</p>
-                    {info.href ? (
-                      <Link
-                        href={info.href}
-                        className="text-gray-300 hover:text-brand transition-colors"
-                      >
-                        {info.value}
-                      </Link>
-                    ) : (
-                      <p className="text-gray-300">{info.value}</p>
-                    )}
+
+                    <p className="text-gray-300 hover:text-brand">{info.value}</p>
                   </div>
                 ))}
               </div>
