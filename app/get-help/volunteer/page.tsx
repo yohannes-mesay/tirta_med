@@ -3,14 +3,14 @@ import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import comm from "@/public/comm.jpg";
+import comm from "@/public/hands.jpg";
 import Footer from "@/app/Home/Footer";
 export default function EmergencyResponse() {
   const router = useRouter();
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        <div className="mx-auto px-4 py-12">
+        <div className="mx-auto px-4 py-6">
           {/* Header */}
           <Button
             variant="ghost"

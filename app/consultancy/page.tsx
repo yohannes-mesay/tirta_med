@@ -35,7 +35,19 @@ const services = [
     link: "/consultancy/detail",
     bulletPoints: [
       {
-        title: "Publication 1",
+        title: "Article 1",
+        description: (
+          <>
+            <strong>Abebe Y</strong>, Dida T, Yisma E, Silvestri D. Ambulance
+            use is not associated with patient acuity after road traffic
+            collisions: a cross-sectional study from Addis Ababa, Ethiopia. BMC
+            Emergency Medicine 2018; 18 (7).
+            https://doi.org/10.1186/s12873-018-0158-5
+          </>
+        ),
+      },
+      {
+        title: "Article 2",
         description: (
           <>
             <strong>Debebe</strong>, <strong>Finot</strong>, Goffi, Alberto,
@@ -48,7 +60,7 @@ const services = [
         ),
       },
       {
-        title: "Publication 2",
+        title: "Article 3",
         description: (
           <>
             Seid M, Azazh A, Enquselassie F,<strong>Yisma E.</strong> Injury

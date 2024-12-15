@@ -22,7 +22,7 @@ export default function TrainingSection() {
             We are dedicated to transforming your hands into instruments of
             healing!
           </h2>
-       
+
           {/* <p className="max-w-2xl mx-auto text-gray-600 py-3">
             We are proud to collaborate with industry-leading partners who share
             our commitment to excellence and innovation in the medical field.
@@ -45,6 +45,7 @@ export default function TrainingSection() {
                 <video
                   className="absolute inset-0  h-full w-full"
                   controls
+                  poster="/image.png"
                   preload="none"
                 >
                   <source src="/vid.mp4" type="video/mp4" />

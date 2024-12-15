@@ -12,7 +12,7 @@ export default function EmergencyResponse() {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        <div className=" mx-auto px-4 py-12">
+        <div className=" mx-auto px-4 py-6">
           {/* Header */}
           <Button
             variant="ghost"

@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ChevronRight, Play, Book, Users } from "lucide-react";
+import { ChevronRight, Play } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 interface BulletPoint {
@@ -44,13 +44,13 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
       title: "Trauma-Focused First Aid in Amharic Vol. 1",
       description:
         "Specialized training for trauma-focused first aid in Amharic Vol. 1",
-      icon: <Book className="h-6 w-6 text-green-500" />,
+      icon: <Play className="h-6 w-6 text-green-500" />,
       link: "https://tirta-s-school.teachable.com/p/d4bf52",
     },
     {
       title: "First Aid for Medical Emergencies in Amharic Vol. 1",
       description: "Learn first aid for medical emergencies in Amharic Vol. 1",
-      icon: <Users className="h-6 w-6 text-purple-500" />,
+      icon: <Play className="h-6 w-6 text-purple-500" />,
       link: "https://tirta-s-school.teachable.com/p/422f15",
     },
   ];
@@ -109,7 +109,12 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
             {selectedService.title !== "Online Trainings" ? (
               <Card className="overflow-hidden h-full flex flex-col">
                 {selectedService.title === "About Our Trainings" ? (
-                  <video className="w-full" controls preload="none">
+                  <video
+                    className="w-full"
+                    poster="/image.png"
+                    controls
+                    preload="none"
+                  >
                     <source src="/vid.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
@@ -118,8 +123,9 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                     src={selectedService.image}
                     alt={selectedService.title}
                     width={600}
-                    height={400}
-                    className={`w-full h-64 object-cover ${
+                    // layout="responsive"
+                    height={600}
+                    className={`w-full h-72 object-fit ${
                       selectedService.title ===
                         "Founding members research publications" && "hidden"
                     }`}
@@ -139,23 +145,28 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                         <div
                           key={index}
                           onClick={() => {
-                            if (point.title === "Publication 1") {
+                            if (point.title === "Article 2") {
                               router.push(
                                 "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/7797328"
                               );
-                            } else if (point.title === "Publication 2") {
+                            } else if (point.title === "Article 3") {
                               router.push(
                                 "https://bmcemergmed.biomedcentral.com/articles/10.1186/s12873-015-0035-4"
                               );
                             }
                           }}
                           className={`pl-4 border-l-2 ${
-                            point.title.startsWith("Publication") &&
-                            "cursor-pointer"
+                            point.title.startsWith("Article") &&
+                            "cursor-pointer "
                           }  border-blue-500`}
                         >
                           <h4 className="font-semibold">{point.title}</h4>
-                          <p className="text-gray-600 text-sm">
+                          <p
+                            className={`text-gray-600 ${
+                              point.title.startsWith("Article") &&
+                              "hover:text-blue-900 "
+                            } text-sm`}
+                          >
                             {point.description}
                           </p>
                         </div>
