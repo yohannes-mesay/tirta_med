@@ -40,8 +40,8 @@ function ActionCard({ icon, title, link }: ActionCardProps) {
 
 export default function ActionMenu() {
   return (
-    <div className="w-full xl:max-w-8xl lg:px-24 mx-auto p-4 py-16 max-sm:px-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    <div className="w-full xl:max-w-8xl xl:px-12 mx-auto p-4 py-16 max-sm:px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
         <ActionCard
           icon={
             <IoIosDesktop className="w-20 h-20 md:w-36 md:h-36 lg:w-36 lg:h-36" />
@@ -74,7 +74,7 @@ export default function ActionMenu() {
             <GiFirstAidKit className="w-20 h-20 md:w-36 md:h-36 lg:w-36 lg:h-36" />
           }
           title="First Aid Tips"
-          link="get-helps/how-to-respond-emergency"
+          link="get-help/respond-to-emergencies"
         />
 
         <ActionCard
@@ -82,7 +82,7 @@ export default function ActionMenu() {
             <FaHandsHelping className="w-20 h-20 md:w-36 md:h-36 lg:w-36 lg:h-36" />
           }
           title="Volunteer with us"
-          link="get-help/volunteer-with-us"
+          link="get-help/volunteer"
         />
       </div>
     </div>
