@@ -26,13 +26,13 @@ function Navbar() {
         <div className="hidden md:flex gap-6  tracking-wider items-center">
           <Link
             href="/what-we-do"
-            className={`hover:text-[#00d6c0] ${isActive("/what-we-do")}`}
+            className={`hover:text-[#00d6c0] sm:text-xl ${isActive("/what-we-do")}`}
           >
             What We Do
           </Link>
           <Link
             href="/training&certification"
-            className={`hover:text-[#00d6c0] ${isActive(
+            className={`hover:text-[#00d6c0] sm:text-xl ${isActive(
               "/training&certification"
             )}`}
           >
@@ -40,19 +40,19 @@ function Navbar() {
           </Link>
           <Link
             href="/yegna-ambulance"
-            className={`hover:text-[#00d6c0] ${isActive("/yegna-ambulance")}`}
+            className={`hover:text-[#00d6c0] sm:text-xl ${isActive("/yegna-ambulance")}`}
           >
             Yegna Ambulance Netwrok
           </Link>
           <Link
             href="/consultancy"
-            className={`hover:text-[#00d6c0] ${isActive("/consultancy")}`}
+            className={`hover:text-[#00d6c0] sm:text-xl ${isActive("/consultancy")}`}
           >
             Research & Consultancy
           </Link>
           <Link
             href="/get-help"
-            className={`hover:text-[#00d6c0] ${isActive("/get-help")}`}
+            className={`hover:text-[#00d6c0] sm:text-xl ${isActive("/get-help")}`}
           >
             Get help
           </Link>

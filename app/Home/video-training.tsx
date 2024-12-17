@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function TrainingSection() {
   return (
-    <section className="w-full py-12 bg-background overflow-hidden">
+    <section className="w-full py-10 bg-second/15 overflow-hidden">
       {/*  <div className="w-full text-center pt-2">
         <div className="text-center ">
           <h2 className="text-4xl font-bold text-gray-900">Training</h2>
@@ -16,9 +16,9 @@ export default function TrainingSection() {
           </p>
         </div>
       </div> */}
-      <div className="w-full text-center pt-2 mb-4">
+      <div className="w-full text-center pt-2 mb-4 ">
         <div className="text-center ">
-          <h2 className="sm:text-4xl mb-10 px-2 font-bold text-gray-900">
+          <h2 className="sm:text-4xl pb-10 px-2 font-bold   text-gray-900">
             We are dedicated to transforming your hands into instruments of
             healing!
           </h2>
@@ -31,7 +31,7 @@ export default function TrainingSection() {
       </div>
       <div className=" grid gap-8 px-0 md:px-6">
         <Card className="border-none shadow-none">
-          <CardContent className="grid gap-10">
+          <CardContent className="grid gap-10   bg-second/15 ">
             {/* First Article */}
             <article className="flex flex-col md:flex-row  ">
               <div className="relative w-full   aspect-video md:aspect-auto">
@@ -45,12 +45,12 @@ export default function TrainingSection() {
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div className="flex flex-col gap-4 md:pl-12">
-                <div className="space-y-2">
+              <div className="flex flex-col gap-8 md:pl-12">
+                <div className="space-y-3">
                   <h2 className="text-2xl font-bold tracking-tight text-[#068073]">
                     CPR
                   </h2>
-                  <p className="text-md text-muted-foreground">
+                  <p className="text-lg text-muted-foreground">
                     Learn the life-saving skill of CPR and be prepared to act in
                     cardiac emergencies. Explore our training resources to gain
                     the confidence to save lives
@@ -63,11 +63,11 @@ export default function TrainingSection() {
                   </Link>
                   <div className="h-1 w-full bg-gradient-to-r from-brand to-yellow-400" />
                 </div>
-                <article className="space-y-2">
+                <article className="space-y-3">
                   <h2 className="text-2xl font-bold tracking-tight text-[#068073]">
                     Choking in Special Populations
                   </h2>
-                  <p className="text-md text-muted-foreground">
+                  <p className="text-lg text-muted-foreground">
                     Quick action during a choking emergency can save lives.
                     Learn essential tips and techniques to manage choking
                     incidents safely and effectively in special populations,
@@ -81,11 +81,11 @@ export default function TrainingSection() {
                   </Link>
                   <div className="h-1 w-full bg-gradient-to-r from-brand to-yellow-400" />
                 </article>
-                <article className="space-y-2">
+                <article className="space-y-3">
                   <h2 className="text-2xl font-bold tracking-tight text-[#068073]">
                     Road Traffic Accidents
                   </h2>
-                  <p className="text-md text-muted-foreground">
+                  <p className="text-lg text-muted-foreground">
                     Be ready to respond to road traffic accidents with our
                     step-by-step guides and first aid resources. Together, we
                     can reduce injury and save lives on the road.
@@ -96,7 +96,6 @@ export default function TrainingSection() {
                   >
                     Learn more {">"}
                   </Link>
-                  <div className="h-1 w-full bg-gradient-to-r from-brand to-yellow-400" />
                 </article>
 
                 {/* Third Article */}

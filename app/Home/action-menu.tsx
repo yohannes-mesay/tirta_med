@@ -14,10 +14,10 @@ interface ActionCardProps {
 
 function ActionCard({ icon, title, link }: ActionCardProps) {
   return (
-    <Link href={link} className="relative group">
-      <div className="absolute inset-0 overflow-hidden rounded-2xl max-sm:rounded-lg">
+    <Link href={link} className="relative  group">
+      <div className="absolute inset-0  overflow-hidden rounded-2xl max-sm:rounded-lg">
         <div
-          className={`absolute inset-0 transition-opacity duration-300 ${"opacity-0 group-hover:opacity-100"}`}
+          className={`absolute inset-0  transition-opacity duration-300 ${"opacity-0 group-hover:opacity-100"}`}
         >
           <div className="absolute inset-0 rotate-[-35deg]">
             <div className="absolute left-0 -top-2 h-full w-1/3 bg-yellow-400" />
@@ -40,7 +40,7 @@ function ActionCard({ icon, title, link }: ActionCardProps) {
 
 export default function ActionMenu() {
   return (
-    <div className="w-full xl:max-w-8xl xl:px-12 mx-auto p-4 py-16 max-sm:px-4">
+    <div className="w-full xl:max-w-8xl bg-second/10 border-none outline-none relative -top-1 xl:px-12 mx-auto p-4 py-16 max-sm:px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
         <ActionCard
           icon={

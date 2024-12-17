@@ -18,7 +18,7 @@ function Slider() {
         position: "relative",
         justifyContent: "center",
         backgroundPosition: "center",
-        backgroundSize: isSmallScreen ? "cover" : "fit",
+        backgroundSize: isSmallScreen ? "cover" : "contain",
         backgroundImage: `url(${banner1.src})`,
         color: "white",
         height: isSmallScreen ? "50vh" : isMedium ? "65vh" : "110vh",

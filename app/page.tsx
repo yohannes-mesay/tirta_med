@@ -12,10 +12,10 @@ import ChooseTirtaMed from "./Home/why-choose-tirta";
 
 export default function Home() {
   return (
-    <div>
+    <div >
       <Hero />
       <ActionMenu />
-      <CommunityService />
+        <CommunityService />
       <TrainingSection />
       <ChooseTirtaMed />
       {/* <MedicalCards />

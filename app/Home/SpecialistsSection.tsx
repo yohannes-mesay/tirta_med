@@ -37,7 +37,7 @@ export default function SpecialistsSection() {
   ];
 
   return (
-    <div className="mx-auto px-10 big:px-20 max-sm:px-4 py-8">
+    <div className="mx-auto px-10 big:px-20  bg-second/15 max-sm:px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Content Section */}
         <div className="space-y-6">
@@ -78,10 +78,10 @@ export default function SpecialistsSection() {
         </div>
 
         {/* Video Section */}
-        <Card className="aspect-video w-full overflow-hidden max-sm:h-96 h-full border-none shadow-none rounded-lg">
+        <Card className="aspect-video w-full   overflow-hidden max-sm:h-96 h-full border-none shadow-none rounded-lg">
           <Image
             src={etech}
-            className="rounded-lg h-full object-contain"
+            className="rounded-lg h-full object-contain bg-second/15"
             alt="etech"
           />
         </Card>

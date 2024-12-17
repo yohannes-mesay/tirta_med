@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function SpikingAwareness() {
   return (
-    <div className="relative w-full max-w-[78rem] mx-auto my-2  max-sm:h-96">
+    <div className="relative w-full  max-w-[75rem] big:max-w-[78rem]  mx-auto my-2  max-sm:h-96">
       <Link
         href="/get-help"
         className="block relative w-full h-[300px] sm:h-[350px] md:h-[400px]"
@@ -22,7 +22,7 @@ export default function SpikingAwareness() {
         </div>
 
         {/* Content Card */}
-        <div className="absolute sm:bottom-6 max-sm:-bottom-24 sm:-left-10 xl:-left-16 w-[90%] sm:w-[90%] md:w-[80%] max-w-[450px] mx-4 z-10">
+        <div className="absolute sm:bottom-6 max-sm:-bottom-24 sm:-left-10 big:-left-16 w-[90%] sm:w-[90%] md:w-[80%] max-w-[450px] mx-4 z-10">
           <div className="relative bg-[#FFF9C4] p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">
               Community Service

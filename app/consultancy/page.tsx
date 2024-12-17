@@ -88,7 +88,7 @@ const services = [
 export default function page() {
   return (
     <div>
-      <ServicesBanner banner={banner1} title="Reasearch & Consultancy" />
+      <ServicesBanner banner={banner1} title="Research & Consultancy" />
       <ServicesPage services={services} />
       {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />

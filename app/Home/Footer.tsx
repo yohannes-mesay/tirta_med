@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import logo from "@/public/logo.png";
+import logo from "@/public/logo2.png";
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,7 +48,7 @@ export default function Footer() {
             {/* Company Info */}
             <div>
               <div className="flex items-center gap-2 mb-6">
-                <Image src={logo} className="w-10" alt="Tirtamed" />
+                <Image src={logo} className="w-10 bg-brand" alt="Tirtamed" />
                 <h2 className="text-2xl font-bold">TirtaMed</h2>
               </div>
               <p className="text-gray-300">
@@ -67,7 +67,9 @@ export default function Footer() {
                   <div key={index}>
                     <p className="text-sm text-gray-400">{info.type}</p>
 
-                    <p className="text-gray-300 hover:text-brand">{info.value}</p>
+                    <p className="text-gray-300 hover:text-brand">
+                      {info.value}
+                    </p>
                   </div>
                 ))}
               </div>

@@ -4,12 +4,11 @@ import { ArrowLeft } from "lucide-react";
 import image2 from "@/public/image2.jpg";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import Footer from "@/app/Home/Footer";
-export default function EmergencyResponse() {
+export default function Community() {
   const router = useRouter();
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <div className="  bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-6">
           {/* Header */}
           <Button
@@ -27,7 +26,7 @@ export default function EmergencyResponse() {
             <div className="w-24 h-1 bg-second mx-auto"></div>
           </div>
 
-          <div className=" grid md:grid-cols-2 gap-8 mb-12">
+          <div className=" grid md:grid-cols-2  gap-8 sm:mb-12">
             <div className="relative rounded-lg lg:h-80  h-48 w-full mx-auto">
               <Image
                 src={image2}
@@ -47,7 +46,6 @@ export default function EmergencyResponse() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

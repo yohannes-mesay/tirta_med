@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useState, ReactElement } from "react";
+import { ReactNode, useState, ReactElement, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -32,6 +32,16 @@ interface Service {
 export default function OnlineTraining({ services }: { services: Service[] }) {
   const [selectedService, setSelectedService] = useState(services[0]);
   const router = useRouter();
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      // Check if it's a small screen
+      const detailsElement = document.getElementById("service-details");
+      if (detailsElement) {
+        detailsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [selectedService]);
 
   const onlineTrainings = [
     {
@@ -75,16 +85,18 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                 }`}
                 onClick={() => setSelectedService(service)}
               >
-                <CardHeader className="flex flex-row items-center gap-4">
+                <CardHeader className="flex flex-row text-xl items-center gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     {service.icon}
                   </div>
                   <div>
                     <CardTitle>{service.title}</CardTitle>
-                    <CardDescription>{service.subtitle}</CardDescription>
+                    <CardDescription className="text-lg">
+                      {service.subtitle}
+                    </CardDescription>
                   </div>
                 </CardHeader>
-                {selectedService.title === service.title &&
+                {/* {selectedService.title === service.title &&
                   service.bulletPoints && (
                     <CardContent>
                       <ul className="list-disc pl-5 space-y-2">
@@ -95,12 +107,13 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                         ))}
                       </ul>
                     </CardContent>
-                  )}
+                  )} */}
               </Card>
             ))}
           </motion.div>
 
           <motion.div
+            id="service-details"
             className="mt-8 md:mt-0 h-full"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -136,7 +149,7 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                   <h3 className="text-2xl font-bold mb-2">
                     {selectedService.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-600 mb-4 text-lg">
                     {selectedService.description}
                   </p>
                   {selectedService.bulletPoints && (

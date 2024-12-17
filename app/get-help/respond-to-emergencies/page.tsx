@@ -1,27 +1,26 @@
 "use client";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
-import { AlertCircle, PhoneCall, Heart, ArrowLeft } from "lucide-react";
+import { AlertCircle, PhoneCall, Heart } from "lucide-react";
 import aid from "@/public/aid.svg";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-import Footer from "@/app/Home/Footer";
+// import { Button } from "@/components/ui/button";
+// import { useRouter } from "next/navigation";
 export default function EmergencyResponse() {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <div className=" mx-auto px-4 py-6">
           {/* Header */}
-          <Button
+          {/* <Button
             variant="ghost"
             className="mb-6 text-blue-900 hover:text-blue-700 transition-colors"
             onClick={() => router.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
-          </Button>
+          </Button> */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
               How to Respond to Emergencies
@@ -121,7 +120,7 @@ export default function EmergencyResponse() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

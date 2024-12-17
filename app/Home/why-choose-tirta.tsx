@@ -3,11 +3,11 @@ import { LiaHandPointRightSolid } from "react-icons/lia";
 
 export default function ChooseTirtaMed() {
   return (
-    <section className="w-full py-8 bg-white">
+    <section className="w-full pb-10 bg-white">
       <div className="col-span-1 md:col-span-2">
         <div className="w-full text-center pt-2">
           <div className="text-center ">
-            <h2 className="text-4xl mb-4 font-bold text-gray-900">
+            <h2 className="text-4xl mb-8 font-bold text-gray-900">
               Why Choose TirtaMed&apos;s Training
             </h2>
 
@@ -17,11 +17,11 @@ export default function ChooseTirtaMed() {
           </p> */}
           </div>{" "}
         </div>
-        <p className="md:text-lg text-gray-800 mx-2 md:mx-20 text-center mb-8">
+        {/* <p className="md:text-lg text-gray-800 mx-2 md:mx-20 text-center mb-8">
           TirtaMed is an accredited CPD provider, and its courses are also
           accredited. All our training programs lead to recognized certification
           upon successful completion. The training service includes:
-        </p>
+        </p> */}
       </div>
       <div className="flex max-sm:flex-col max-sm:px-4 justify-around px-28 items-center ">
         <Card className="  shadow-none border-none">
@@ -41,7 +41,7 @@ export default function ChooseTirtaMed() {
           </ul>
         </Card>
 
-        <Card className=" shadow-none border-none">
+        <Card className=" shadow-none border-none text-xl">
           <ul className="space-y-4">
             {[
               "Interactive digital learning platform",
