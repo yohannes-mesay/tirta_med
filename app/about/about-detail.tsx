@@ -36,7 +36,7 @@ export default function AboutDetail() {
                   {/* <h2 className="text-2xl text-center font-bold tracking-tight text-[#068073]">
                     About Us
                   </h2> */}
-                  <p className="text-md text-gray-800 text-center">
+                  <p className="text-md text-gray-800 text-start">
                     {showFullText.aboutUs
                       ? `Founded in 2017, TirtaMed Private Limited Company emerged from a shared vision among leading Ethiopian researchers and specialists in emergency and critical care medicine. Our founders combined decades of expertise with an intimate understanding of Ethiopia's healthcare landscape to create a company dedicated to transforming emergency medical care in our nation. At TirtaMed, we understand the unique challenges facing emergency healthcare in Ethiopia, from urban centers to rural communities. Drawing from our deep experience in the Ethiopian medical sector, we are committed to developing solutions that address our country's specific needs, infrastructure, and healthcare delivery systems. Through our work, we are building a future where quality emergency medical care is accessible to all Ethiopians, contributing to the strengthening of our nation's healthcare system.`
                       : `Founded in 2017, TirtaMed Private Limited Company emerged from a shared vision among leading Ethiopian researchers and specialists in emergency and critical care medicine...`}
@@ -55,7 +55,7 @@ export default function AboutDetail() {
                   <h2 className="text-2xl font-bold tracking-tight text-[#068073]">
                     Our Services
                   </h2>
-                  <p className="text-md text-gray-800 text-center">
+                  <p className="text-md text-gray-800 text-start">
                     {showFullText.ourServices
                       ? `TirtaMed delivers four integral services that form the cornerstone of our mission to transform emergency healthcare in Ethiopia: Emergency Response Training: Comprehensive first aid and emergency medical education for both laypersons and healthcare professionals. Yegna Ambulance Network: An innovative, integrated ambulance service system coordinating first and second-tier emergency response system. Research and Consultancy: Evidence-based research and expert guidance in emergency medical services. Community Impact Programs: Public health initiatives and emergency preparedness training at the grassroots level.`
                       : `TirtaMed delivers four integral services that form the cornerstone of our mission to transform emergency healthcare in Ethiopia...`}
@@ -73,7 +73,7 @@ export default function AboutDetail() {
                   <h2 className="text-2xl font-bold tracking-tight text-[#068073]">
                     Our Vision
                   </h2>
-                  <p className="text-md text-gray-800 text-center">
+                  <p className="text-md text-gray-800 text-start">
                     {showFullText.ourVision
                       ? `At TirtaMed, we aspire to be catalysts of change in Ethiopia's emergency healthcare landscape, envisioning a future where every Ethiopian has access to prompt, reliable, and professional emergency medical care. Through relentless innovation, strategic collaborations, and an uncompromising commitment to excellence, we are not only responding to emergencies—we are redefining the delivery of emergency healthcare across the nation.`
                       : `At TirtaMed, we aspire to be catalysts of change in Ethiopia's emergency healthcare landscape...`}
