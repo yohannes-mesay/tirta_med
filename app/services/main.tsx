@@ -30,12 +30,17 @@ interface Service {
 }
 
 export default function OnlineTraining({ services }: { services: Service[] }) {
-  const [selectedService, setSelectedService] = useState(services[0]);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
   const router = useRouter();
 
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      // Check if it's a small screen
+    // Update the initial selected service based on the screen size
+    setSelectedService(window.innerWidth < 768 ? null : services[0]);
+  }, [services]);
+
+  useEffect(() => {
+    if (window.innerWidth < 768 && selectedService) {
+      // Smooth scroll to the details section on smaller screens
       const detailsElement = document.getElementById("service-details");
       if (detailsElement) {
         detailsElement.scrollIntoView({ behavior: "smooth" });
@@ -79,7 +84,7 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
               <Card
                 key={index}
                 className={`cursor-pointer transition-all ${
-                  selectedService.title === service.title
+                  selectedService && selectedService.title === service.title
                     ? "border-blue-500 shadow-lg"
                     : "hover:border-blue-200"
                 }`}
@@ -96,18 +101,6 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                     </CardDescription>
                   </div>
                 </CardHeader>
-                {/* {selectedService.title === service.title &&
-                  service.bulletPoints && (
-                    <CardContent>
-                      <ul className="list-disc pl-5 space-y-2">
-                        {service.bulletPoints.map((point, idx) => (
-                          <li key={idx} className="text-sm text-gray-600">
-                            {point.title}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  )} */}
               </Card>
             ))}
           </motion.div>
@@ -119,7 +112,7 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            {selectedService.title !== "Online Trainings" ? (
+            {selectedService && selectedService.title !== "Online Trainings" ? (
               <Card className="overflow-hidden h-full flex flex-col">
                 {selectedService.title === "About Our Trainings" ? (
                   <video
@@ -136,7 +129,6 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                     src={selectedService.image}
                     alt={selectedService.title}
                     width={600}
-                    // layout="responsive"
                     height={600}
                     className={`w-full h-72 object-fit ${
                       selectedService.title ===
@@ -204,37 +196,38 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                   Online Trainings
                 </h2>
                 <div className="space-y-4 flex-grow">
-                  {onlineTrainings.map((training, index) => (
-                    <motion.div
-                      key={index}
-                      className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 * index }}
-                    >
-                      <div className="p-6">
-                        <div className="flex items-center mb-4">
-                          <div className="mr-4 p-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-200">
-                            {training.icon}
+                  {selectedService &&
+                    onlineTrainings.map((training, index) => (
+                      <motion.div
+                        key={index}
+                        className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 * index }}
+                      >
+                        <div className="p-6">
+                          <div className="flex items-center mb-4">
+                            <div className="mr-4 p-3 rounded-full bg-gradient-to-br from-blue-100 to-blue-200">
+                              {training.icon}
+                            </div>
+                            <h3 className="text-xl font-semibold">
+                              {training.title}
+                            </h3>
                           </div>
-                          <h3 className="text-xl font-semibold">
-                            {training.title}
-                          </h3>
+                          <p className="text-gray-600 mb-4">
+                            {training.description}
+                          </p>
+                          <Button
+                            onClick={() => router.push(training.link)}
+                            variant="outline"
+                            className="w-full border-blue-500 text-blue-500 hover:bg-blue-50"
+                          >
+                            Learn More
+                            <ChevronRight className="ml-2 h-4 w-4" />
+                          </Button>
                         </div>
-                        <p className="text-gray-600 mb-4">
-                          {training.description}
-                        </p>
-                        <Button
-                          onClick={() => router.push(training.link)}
-                          variant="outline"
-                          className="w-full border-blue-500 text-blue-500 hover:bg-blue-50"
-                        >
-                          Learn More
-                          <ChevronRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </div>
-                    </motion.div>
-                  ))}
+                      </motion.div>
+                    ))}
                 </div>
                 <Button
                   onClick={() =>

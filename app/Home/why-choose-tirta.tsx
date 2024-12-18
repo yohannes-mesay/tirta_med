@@ -6,8 +6,8 @@ export default function ChooseTirtaMed() {
     <section className="w-full pb-10 mt-8 bg-white">
       <div className="col-span-1 md:col-span-2">
         <div className="w-full text-center pt-2">
-          <div className="text-center ">
-            <h2 className="text-4xl mb-8 font-bold text-gray-900">
+          <div className="text-start ">
+            <h2 className="text-3xl mb-8 ml-8 font-bold text-gray-900">
               Why Choose TirtaMed&apos;s Training
             </h2>
 

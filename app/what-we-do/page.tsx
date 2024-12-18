@@ -60,7 +60,7 @@ const services = [
     icon: <PiAmbulanceFill className="h-8 w-8" />,
     title: "Yegna Ambulance Network",
     subtitle:
-      "Innovation meets necessity in our groundbreaking Yegna Ambulance service. This pioneering program seamlessly integrates Ethiopia's ambulance resources into a coordinated emergency response network",
+      "Integrates Ethiopia's ambulance resources into a coordinated emergency response network",
     description:
       "Innovation meets necessity in our groundbreaking Yegna Ambulance service. This pioneering program seamlessly integrates Ethiopia's ambulance resources into a coordinated emergency response network:",
     image: serv4,

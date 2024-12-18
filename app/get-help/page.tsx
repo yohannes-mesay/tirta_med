@@ -21,9 +21,9 @@ export default function page() {
       <div className="w-full p-4 bg-brand flex items-center text-white justify-center">
         <Link
           href="/get-help/respond-to-emergencies"
-          className="bg-indigo-800 p-2 px-6 rounded-md font-semibold sm:text-2xl "
+          className="bg-second p-2 px-6 rounded-md font-semibold sm:text-2xl "
         >
-          How to Respond to Emergencies
+          How to Respond  to Emergencies
         </Link>
       </div>
       <RadioShow />
@@ -31,7 +31,7 @@ export default function page() {
       <div className="w-full  p-4 bg-brand flex items-center text-white justify-center">
         <Link
           href="/get-help/volunteer"
-          className="bg-indigo-800 p-2 px-6 rounded-md font-semibold sm:text-2xl "
+          className="bg-second p-2 px-6 rounded-md font-semibold sm:text-2xl "
         >
           Volunteer with us
         </Link>

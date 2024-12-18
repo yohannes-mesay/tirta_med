@@ -26,13 +26,18 @@ const services = [
   {
     icon: <MdModelTraining className="h-8 w-8" />,
     title: "About Our Trainings",
-    subtitle:
-      "TirtaMed is an accredited CPD provider, and its courses are also accredited. All our training programs lead to recognized certification upon successful completion.",
+    subtitle: "Designed to meet diverse learning needs",
     description:
-      "Our first aid training programs are designed to meet diverse learning needs while maintaining the highest standards of medical education. Each program is carefully structured to provide both theoretical knowledge and hands-on practical experience, delivered by certified instructors with extensive field experience. Whether you're a healthcare professional, first responder, or community member, our courses equip you with the skills and confidence to handle emergency situations effectively.",
+      " TirtaMed is an accredited CPD provider, and its courses are also accredited. All our training programs lead to recognized certification upon successful completion.",
     image: training3,
     link: "/training&certification/detail",
-    bulletPoints: [],
+    bulletPoints: [
+      {
+        title: "",
+        description:
+          "Our first aid training programs are designed to meet diverse learning needs while maintaining the highest standards of medical education. Each program is carefully structured to provide both theoretical knowledge and hands-on practical experience, delivered by certified instructors with extensive field experience. Whether you're a healthcare professional, first responder, or community member, our courses equip you with the skills and confidence to handle emergency situations effectively.",
+      },
+    ],
   },
   {
     icon: <MdComputer className="h-8 w-8" />,

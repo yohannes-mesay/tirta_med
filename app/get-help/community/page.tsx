@@ -1,24 +1,20 @@
 "use client";
 import Image from "next/image";
-import { ArrowLeft } from "lucide-react";
 import image2 from "@/public/image2.jpg";
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
 export default function Community() {
-  const router = useRouter();
   return (
     <>
       <div className="  bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-6">
           {/* Header */}
-          <Button
+          {/* <Button
             variant="ghost"
             className="mb-6 text-second  hover:text-blue-700 transition-colors"
             onClick={() => router.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
-          </Button>
+          </Button> */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-second  mb-4">
               Community Service

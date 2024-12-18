@@ -34,7 +34,7 @@ export default function TrainingSection() {
           <CardContent className="grid gap-10   bg-second/15 ">
             {/* First Article */}
             <article className="flex flex-col md:flex-row  ">
-              <div className="relative w-full   aspect-video md:aspect-auto">
+              <div className="relative w-full max-sm:mb-6  aspect-video md:aspect-auto">
                 <video
                   className="absolute inset-0 h-full w-full object-cover"
                   controls
