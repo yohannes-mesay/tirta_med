@@ -35,7 +35,7 @@ const help: Section[] = [
   {
     title: "Radio Show",
     description:
-      "Stay tuned to 'Lehowot Menor,' our partner radio show on Ahadu Radio, dedicated to emergency medicine and critical care. Featuring expert discussions, practical tips, and real-life 	stories, the program offers valuable insights to help you stay informed and prepared.",
+      "Stay tuned to 'Lehiwot Menor,' our partner radio show on Ahadu Radio, dedicated to emergency medicine and critical care. Featuring expert discussions, practical tips, and real-life 	stories, the program offers valuable insights to help you stay informed and prepared.",
     bulletPoints: [],
   },
   {

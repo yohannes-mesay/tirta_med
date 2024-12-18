@@ -113,7 +113,7 @@ export default function Partners() {
   };
 
   return (
-    <div className=" mb-12 max-sm: top-12 relative">
+    <div className=" mb-12 max-sm: top-12 relative ">
       {/* Background Image */}
       {/* <Image
         src={partners}
@@ -121,7 +121,7 @@ export default function Partners() {
         className="absolute inset-0 z-[-1] h- w-full object-cover"
       /> */}
 
-      <div className="w-full text-center ">
+      <div className="w-full text-center">
         <div className="text-center ">
           <h2 className="text-4xl font-bold text-gray-900">
             Our partners and clients

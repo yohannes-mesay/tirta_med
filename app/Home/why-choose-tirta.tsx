@@ -3,7 +3,7 @@ import { LiaHandPointRightSolid } from "react-icons/lia";
 
 export default function ChooseTirtaMed() {
   return (
-    <section className="w-full pb-10 bg-white">
+    <section className="w-full pb-10 mt-8 bg-white">
       <div className="col-span-1 md:col-span-2">
         <div className="w-full text-center pt-2">
           <div className="text-center ">

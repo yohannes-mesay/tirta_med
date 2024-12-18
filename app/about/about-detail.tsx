@@ -85,7 +85,7 @@ export default function AboutDetail() {
                   >
                     {showFullText.ourVision ? "Show less" : "Read more >"}
                   </Link> */}
-                  <div className="h-1 w-full bg-gradient-to-r from-brand to-yellow-400" />
+                  {/* <div className="h-1 w-full bg-gradient-to-r from-brand to-yellow-400" /> */}
                 </article>
               </div>
             </article>

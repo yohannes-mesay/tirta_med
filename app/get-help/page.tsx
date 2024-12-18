@@ -10,31 +10,32 @@ import banner1 from "@/public/tirtabanner.jpg";
 import ServicesBanner from "../services/servies-banner";
 
 import Community from "./community/page";
-import EmergencyResponse from "./respond-to-emergencies/page";
 import Link from "next/link";
+import RadioShow from "./radio-show/page";
 
 export default function page() {
   return (
     <div>
       <ServicesBanner banner={banner1} title="Get Help" />
+      <Community />
+      <div className="w-full p-4 bg-brand flex items-center text-white justify-center">
+        <Link
+          href="/get-help/respond-to-emergencies"
+          className="bg-indigo-800 p-2 px-6 rounded-md font-semibold sm:text-2xl "
+        >
+          How to Respond to Emergencies
+        </Link>
+      </div>
+      <RadioShow />
+
       <div className="w-full  p-4 bg-brand flex items-center text-white justify-center">
         <Link
           href="/get-help/volunteer"
-          className="bg-black p-2 px-6 rounded-md font-semibold sm:text-2xl "
+          className="bg-indigo-800 p-2 px-6 rounded-md font-semibold sm:text-2xl "
         >
           Volunteer with us
         </Link>
       </div>
-      <Community />
-      <div className="w-full p-4 mb-6  bg-brand flex items-center text-white justify-center">
-        <Link
-          href="/get-help/radio-show"
-          className="bg-black p-2 px-6 rounded-md font-semibold sm:text-2xl "
-        >
-          Radio Show
-        </Link>
-      </div>
-      <EmergencyResponse />
 
       {/* <LeafletMap latitude={9.019412} longitude={38.801623} zoom={13} /> */}
       <Footer />

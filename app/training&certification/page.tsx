@@ -11,7 +11,6 @@ import training3 from "@/public/training3.jpg";
 import training4 from "@/public/image10.jpg";
 import training6 from "@/public/image9.jpg";
 import training8 from "@/public/image11.jpg";
-import img from "@/public/image2.jpg";
 // import training7 from "@/public/tr1.jpg";
 // import training8 from "@/public/tr2.jpg";
 // import yegna from "@/public/yegna.jpg";
@@ -22,13 +21,13 @@ import { GiArchiveResearch } from "react-icons/gi";
 import { MdComputer, MdModelTraining } from "react-icons/md";
 import { FaCertificate } from "react-icons/fa";
 import { MdOutlineModelTraining } from "react-icons/md";
-import { FaSuperpowers } from "react-icons/fa6";
 
 const services = [
   {
     icon: <MdModelTraining className="h-8 w-8" />,
     title: "About Our Trainings",
-    subtitle: "Designed to meet diverse learning needs",
+    subtitle:
+      "TirtaMed is an accredited CPD provider, and its courses are also accredited. All our training programs lead to recognized certification upon successful completion.",
     description:
       "Our first aid training programs are designed to meet diverse learning needs while maintaining the highest standards of medical education. Each program is carefully structured to provide both theoretical knowledge and hands-on practical experience, delivered by certified instructors with extensive field experience. Whether you're a healthcare professional, first responder, or community member, our courses equip you with the skills and confidence to handle emergency situations effectively.",
     image: training3,
@@ -146,16 +145,6 @@ const services = [
         description: "",
       },
     ],
-  },
-  {
-    icon: <FaSuperpowers className="h-8 w-8" />,
-    title: "Why Choose TirtaMed’s Training?",
-    subtitle: "accredited CPD provider",
-    description:
-      "TirtaMed is an accredited CPD provider, and its courses are also accredited. All our training programs lead to recognized certification upon successful completion.",
-    link: "/training&certification/detail",
-    image: img,
-    bulletPoints: [],
   },
 ];
 

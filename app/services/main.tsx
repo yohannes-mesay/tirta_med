@@ -166,6 +166,10 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                               router.push(
                                 "https://bmcemergmed.biomedcentral.com/articles/10.1186/s12873-015-0035-4"
                               );
+                            } else if (point.title === "Article 1") {
+                              router.push(
+                                "https://bmcemergmed.biomedcentral.com/articles/10.1186/s12873-018-0158-5"
+                              );
                             }
                           }}
                           className={`pl-4 border-l-2 ${
@@ -173,7 +177,13 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                             "cursor-pointer "
                           }  border-blue-500`}
                         >
-                          <h4 className="font-semibold">{point.title}</h4>
+                          <h4
+                            className={` ${
+                              point.title.startsWith("Article") && "hidden "
+                            } font-semibold`}
+                          >
+                            {point.title}
+                          </h4>
                           <p
                             className={`text-gray-600 ${
                               point.title.startsWith("Article") &&

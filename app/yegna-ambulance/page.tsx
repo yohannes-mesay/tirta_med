@@ -8,7 +8,7 @@ import Footer from "../Home/Footer";
 import banner1 from "@/public/tirtabanner.jpg";
 import { IoExtensionPuzzleOutline } from "react-icons/io5";
 import amb from "@/public/image12.jpg";
-import need from "@/public/image13.jpg";
+import need from "@/public/etechcrop.jpg";
 import etech from "@/public/image14.png";
 import image15 from "@/public/image15.svg";
 import image16 from "@/public/image16.svg";
