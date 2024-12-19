@@ -18,14 +18,14 @@ export default function RadioShow() {
             Back
           </Button> */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-second mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-blue-400 mb-4">
               Radio show
             </h1>
-            {/* <div className="w-24 h-1 bg-second mx-auto"></div> */}
+            {/* <div className="w-24 h-1 blue-400 mx-auto"></div> */}
           </div>
 
           <div className=" grid md:grid-cols-2 gap-8 mb-12">
-            <p className="p-6 pb-8 max-sm:px-2 text-center bg-second text-xl rounded-lg  self-center text-white">
+            <p className="p-6 pb-8 max-sm:px-2 text-center bg-blue-400 text-xl rounded-lg  self-center text-white">
               Stay tuned to &quot;Lehowot Menor,&quot; our partner radio show on
               Ahadu Radio (94.3 MHz) every Sunday morning starting at 7 AM. This
               program is dedicated to emergency medicine and critical care,
