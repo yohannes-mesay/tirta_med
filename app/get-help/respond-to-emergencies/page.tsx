@@ -16,14 +16,14 @@ export default function EmergencyResponse() {
           {/* Header */}
           <Button
             variant="ghost"
-            className="mb-6 text-second  hover:text-blue-700 transition-colors"
+            className="mb-6 text-blue-500  hover:text-blue-500 transition-colors"
             onClick={() => router.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
           </Button>
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-second  mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black  mb-4">
               How to Respond to Emergencies
             </h1>
             {/* <div className="w-24 h-1 bg-second mx-auto"></div> */}
@@ -40,7 +40,7 @@ export default function EmergencyResponse() {
               />
             </div>
 
-            <Card className="p-6 bg-second  text-white">
+            <Card className="p-6 bg-blue-300  text-black">
               <h2 className="text-xl md:text-2xl font-semibold mb-6">
                 For any emergency, please follow these instructions:
               </h2>
@@ -53,7 +53,7 @@ export default function EmergencyResponse() {
                     <h3 className="text-lg font-semibold text-red-500 mb-2">
                       A. Check
                     </h3>
-                    <p className="text-white">
+                    <p className="text-black">
                       Ensure the scene is safe. If the scene is not safe, do not
                       approach the patient; instead, call for support. If the
                       scene is safe, check the patient&apos;s responsiveness by
@@ -72,7 +72,7 @@ export default function EmergencyResponse() {
                     <h3 className="text-lg font-semibold text-red-500 mb-2">
                       B. Call
                     </h3>
-                    <p className="text-white">
+                    <p className="text-black">
                       If the patient is unresponsive, shout for help and/or call
                       the ambulance service. In Addis Ababa, dial{" "}
                       <span className="font-bold">939</span> or{" "}
@@ -90,7 +90,7 @@ export default function EmergencyResponse() {
                     <h3 className="text-lg font-semibold text-red-500 mb-2">
                       C. Care
                     </h3>
-                    <p className="text-white">
+                    <p className="text-black">
                       After calling the ambulance, provide first aid based on
                       ABCD (Airway, Breathing, Circulation, and Disability).
                     </p>

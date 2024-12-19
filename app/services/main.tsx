@@ -68,6 +68,19 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
       icon: <Play className="h-6 w-6 text-purple-500" />,
       link: "https://tirta-s-school.teachable.com/p/422f15",
     },
+    {
+      title: "WAL’AANSA GARGAARSA JALQABAA BU’UURAA - LAKK 1",
+      description: "",
+      icon: <Play className="h-6 w-6 text-purple-500" />,
+      link: "https://tirta-s-school.teachable.com/p/wal-aansa-gargaarsa-jalqabaa-bu-uuraa-lakk-1",
+    },
+    {
+      title:
+        "WAL’AANSA GARGAARSA JALQABAA DHUKKUBOOTA HATTATTAMAAF KENNAMU - LAKK 1",
+      description: "",
+      icon: <Play className="h-6 w-6 text-purple-500" />,
+      link: "https://tirta-s-school.teachable.com/p/wal-aansa-gargaarsa-jalqabaa-dhukkuboota-hattattamaaf-kennamu-lakk-1",
+    },
   ];
 
   return (
@@ -191,16 +204,16 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
                 </CardContent>
               </Card>
             ) : (
-              <div className="space-y-6 h-full flex flex-col">
-                <h2 className="text-3xl font-bold mb-6 text-second">
+              <div className="space-y-6 h-2/3 flex flex-col overflow-auto">
+                <h2 className="text-3xl font-bold  text-second">
                   Online Trainings
                 </h2>
-                <div className="space-y-4 flex-grow">
+                <div className="space-y-2 flex-grow">
                   {selectedService &&
                     onlineTrainings.map((training, index) => (
                       <motion.div
                         key={index}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+                        className="bg-white rounded-lg  shadow-lg overflow-auto transform transition-all duration-300 hover:scale-105"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 * index }}

@@ -18,20 +18,20 @@ export default function page() {
     <div>
       <ServicesBanner banner={banner1} title="Get Help" />
       <Community />
-      <div className="w-full p-4 bg-brand flex items-center text-white justify-center">
+      <div className="w-full p-4 bg-brand flex items-center text-gray-700 justify-center">
         <Link
           href="/get-help/respond-to-emergencies"
-          className="bg-blue-400 p-2 px-6 rounded-md font-semibold sm:text-2xl "
+          className="bg-blue-300/80 p-2 px-6 rounded-md font-semibold sm:text-2xl "
         >
           How to Respond to Emergencies
         </Link>
       </div>
       <RadioShow />
 
-      <div className="w-full  p-4 bg-brand flex items-center text-white justify-center">
+      <div className="w-full  p-4 bg-brand flex items-center text-gray-700 justify-center">
         <Link
           href="/get-help/volunteer"
-          className="bg-blue-400 p-2 px-6 rounded-md font-semibold sm:text-2xl "
+          className="bg-blue-300/80 p-2 px-6 rounded-md font-semibold sm:text-2xl "
         >
           Volunteer with us
         </Link>
