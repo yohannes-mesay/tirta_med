@@ -26,7 +26,7 @@ export default function RadioShow() {
 
           <div className=" grid md:grid-cols-2 gap-8 mb-12">
             <p className="p-6 pb-8 max-sm:px-2 text-center bg-blue-300 text-xl rounded-lg  self-center text-black">
-              Stay tuned to &quot;Lehowot Menor,&quot; our partner radio show on
+              Stay tuned to &quot;Lehiwot Menor,&quot; our partner radio show on
               Ahadu Radio (94.3 MHz) every Sunday morning starting at 7 AM. This
               program is dedicated to emergency medicine and critical care,
               featuring expert discussions, practical tips, and real-life

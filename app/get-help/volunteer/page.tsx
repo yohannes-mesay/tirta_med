@@ -21,14 +21,14 @@ export default function EmergencyResponse() {
             Back
           </Button>
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-second mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
               Volunteer with us
             </h1>
             {/* <div className="w-24 h-1 bg-second mx-auto"></div> */}
           </div>
 
           <div className=" grid md:grid-cols-2 gap-8 mb-12">
-            <p className="p-6 pb-8 max-sm:px-2 text-center bg-second text-xl rounded-lg  self-center text-white">
+            <p className="p-6 pb-8 max-sm:px-2 text-center bg-blue-300 text-xl rounded-lg  self-center text-black">
               Join our mission to transform prehospital care in Ethiopia by
               volunteering with TirtaMed. Whether you&apos;re a healthcare
               professional, a student, or a passionate advocate for better care,
