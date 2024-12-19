@@ -70,14 +70,15 @@ export default function OnlineTraining({ services }: { services: Service[] }) {
     },
     {
       title: "WAL’AANSA GARGAARSA JALQABAA BU’UURAA - LAKK 1",
-      description: "",
+      description: "Learn basic first aid techniques in Affan Oromo Vol. 1",
       icon: <Play className="h-6 w-6 text-purple-500" />,
       link: "https://tirta-s-school.teachable.com/p/wal-aansa-gargaarsa-jalqabaa-bu-uuraa-lakk-1",
     },
     {
       title:
         "WAL’AANSA GARGAARSA JALQABAA DHUKKUBOOTA HATTATTAMAAF KENNAMU - LAKK 1",
-      description: "",
+      description:
+        "Specialized training for trauma-focused first aid in Affan Oromo Vol. 1",
       icon: <Play className="h-6 w-6 text-purple-500" />,
       link: "https://tirta-s-school.teachable.com/p/wal-aansa-gargaarsa-jalqabaa-dhukkuboota-hattattamaaf-kennamu-lakk-1",
     },
